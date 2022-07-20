@@ -2,80 +2,123 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <style>
-    .table {
-        text-align: center;
-    }
-    th.bg {
-       background: antiquewhite;
-    }
-    th.time {
-        background: #bed5e9;
-    }
+  .table {
+    text-align: center;
+  }
+
+  th.bg {
+    background: antiquewhite;
+  }
+
+  th.time {
+    background: #bed5e9;
+  }
 </style>
+
 <body>
-    <div class="container">
-        <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col" class="bg-light">Thời gian</th>
-                <th scope="col" class="bg">Thứ 2</th>
-                <th scope="col" class="bg">Thứ 3</th>
-                <th scope="col" class="bg">Thứ 4</th>
-                <th scope="col" class="bg">Thứ 5</th>
-                <th scope="col" class="bg">Thứ 6</th>
-                <th scope="col" class="bg">Thứ 7</th>
-                <th scope="col" class="bg">Chủ nhật</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" class="time">8:00 - 9:00</th>
-                <td>
-                    <p>Bs NGuyễn Mai Phương</p>
-                    <p>Bs Trịnh Kim Long</p>
-                </td>
-                <td>Bs Nguyễn Mai Phương</td>
-              </tr>
-              <tr>
-                <th scope="row" class="time">9:00 - 10:00</th>
-                <td>Bs Nguyễn Mai Phương</td>
-              </tr>
-              <tr>
-                <th scope="row" class="time">10:00 - 11:00</th>
-                <td>Bs Nguyễn Mai Phương</td>
-              </tr>
-              <tr>
-                <th scope="row" class="time">14:00 - 15:00</th>
-                <td>Bs Nguyễn Mai Phương</td>
-              </tr>
-              <tr>
-                <th scope="row" class="time">16:00 - 17:00</th>
-                <td>Bs Nguyễn Mai Phương</td>
-              </tr>
-              <tr>
-                <th scope="row" class="time">17:00 - 18:00</th>
-                <td>Bs Nguyễn Mai Phương</td>
-              </tr>
-              <tr>
-                <th scope="row" class="time">18:00 - 19:00</th>
-                <td>Bs Nguyễn Mai Phương</td>
-              </tr>
-              <tr>
-                <th scope="row" class="time">19:00 - 20:00</th>
-                <td>Bs Nguyễn Mai Phương</td>
-              </tr>
-            </tbody>
-          </table>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+  <input name="chk1" type="checkbox" id="chk1" value="">Bác sĩ
+  <input name="chk2" type="checkbox" id="chk2" value="">Chuyên khoa
+  <input name="chk3" type="checkbox" id="chk3" value="">Ngày
+  <p id="sb1">
+    <select name="" id="">Chọn bác sĩ
+      <option value="">Bs 1</option>
+      <option value="">Bs 2</option>
+    </select>
+  </p>
+  <p id="sb2"><select name="" id="">Chọn chuyên khoa
+      <option value="">Khoa 1</option>
+      <option value="">Khoa 2</option>
+    </select></p>
+  <p id="sb3">
+    <input type="date">
+  </p>
+  <div class="container">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col" class="bg-light">Thời gian</th>
+          <th scope="col" class="bg">Thứ 2</th>
+          <th scope="col" class="bg">Thứ 3</th>
+          <th scope="col" class="bg">Thứ 4</th>
+          <th scope="col" class="bg">Thứ 5</th>
+          <th scope="col" class="bg">Thứ 6</th>
+          <th scope="col" class="bg">Thứ 7</th>
+          <th scope="col" class="bg">Chủ nhật</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="time">8:00 - 9:00</th>
+          <td>
+            <p>Bs NGuyễn Mai Phương</p>
+            <p>Bs Trịnh Kim Long</p>
+          </td>
+          <td>Bs Nguyễn Mai Phương</td>
+        </tr>
+        <tr>
+          <th scope="row" class="time">9:00 - 10:00</th>
+          <td>Bs Nguyễn Mai Phương</td>
+        </tr>
+        <tr>
+          <th scope="row" class="time">10:00 - 11:00</th>
+          <td>Bs Nguyễn Mai Phương</td>
+        </tr>
+        <tr>
+          <th scope="row" class="time">14:00 - 15:00</th>
+          <td>Bs Nguyễn Mai Phương</td>
+        </tr>
+        <tr>
+          <th scope="row" class="time">16:00 - 17:00</th>
+          <td>Bs Nguyễn Mai Phương</td>
+        </tr>
+        <tr>
+          <th scope="row" class="time">17:00 - 18:00</th>
+          <td>Bs Nguyễn Mai Phương</td>
+        </tr>
+        <tr>
+          <th scope="row" class="time">18:00 - 19:00</th>
+          <td>Bs Nguyễn Mai Phương</td>
+        </tr>
+        <tr>
+          <th scope="row" class="time">19:00 - 20:00</th>
+          <td>Bs Nguyễn Mai Phương</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
+<script>
+  $(document).ready(function () {
+    //hide all contents
+    $('p[id^=sb]').hide();
+
+    $('input[id^=chk]').change(function () {
+
+      // get checkbox index
+      var index = $(this).attr('id').replace('chk', '');
+      //show respective contents
+      if ($(this).is(':checked'))
+        $('#sb' + index).show();
+      else
+        $('#sb' + index).hide();
+    });
+
+  });
+</script>
 
 </html>
