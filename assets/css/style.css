@@ -1,0 +1,174 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* automatic size vw */
+/* automatic size vh */
+/* text clamp */
+/* anime In order */
+footer#footer .container {
+  border-top: 1px solid #f3f5f9;
+  background-color: #3ab58a;
+  padding: 30px 0 0;
+  color: #fff;
+}
+footer#footer .container > .inner {
+  max-width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+}
+footer#footer .container > .inner .address {
+  margin-bottom: 30px;
+}
+footer#footer .container > .inner .address .logo {
+  margin-bottom: 30px;
+}
+footer#footer .container > .inner .address .logo img {
+  width: 204px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 90px;
+}
+footer#footer .container > .inner .address .item_content ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+footer#footer .container > .inner .address .item_content ul li i {
+  margin-right: 10px;
+  color: #fff;
+}
+footer#footer .container > .inner .address .item_content ul li p {
+  color: #4b566b;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+}
+footer#footer .container > .inner .about_us {
+  margin-bottom: 30px;
+}
+footer#footer .container > .inner .about_us .title {
+  margin-bottom: 25px;
+}
+footer#footer .container > .inner .about_us .title h3 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+footer#footer .container > .inner .about_us ul li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+footer#footer .container > .inner .about_us ul li a {
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+}
+footer#footer .container > .inner .contact {
+  margin-bottom: 30px;
+}
+footer#footer .container > .inner .contact .hotline {
+  margin-bottom: 25px;
+}
+footer#footer .container > .inner .contact .hotline .title {
+  margin-bottom: 25px;
+}
+footer#footer .container > .inner .contact .hotline .title h3 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+footer#footer .container > .inner .contact .hotline .item_thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+footer#footer .container > .inner .contact .hotline .item_thumb i {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+}
+footer#footer .container > .inner .contact .hotline .item_thumb p {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+footer#footer .container > .inner .contact .hotline .txt_desp p {
+  font-size: 16px;
+  color: #fff;
+}
+footer#footer .container .copyright {
+  padding: 25px 0;
+  background-color: #34a37c;
+}
+footer#footer .container .copyright .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer#footer .container .copyright .inner .txt_desp p {
+  font-size: 12px;
+  color: #fff;
+}
+footer#footer .container .copyright .inner .item_thumb ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer#footer .container .copyright .inner .item_thumb ul li {
+  margin-right: 10px;
+  list-style: none;
+}
+footer#footer .container .copyright .inner .item_thumb ul li img {
+  height: 40px;
+}
