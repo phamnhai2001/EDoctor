@@ -1,49 +1,18 @@
-.bs-example {
-    .modal {
-        .modal-dialog {
-            max-width: 1000px !important;
-            .modal-content {
-                background: linear-gradient(22deg, rgba(2,0,36,1) 0%, rgba(81,181,135,1) 0%, rgba(255,249,249,1) 100%);
-                .modal-header {
-                    .modal-title {
-
-                    }
-                    .btn-close {
-
-                    }
-                }
-            }
-            .modal-inner {
+#wrapper {
+    &.appointment {
+        .inner {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 5%;
+            .list-item {
+                list-style: none;
                 display: flex;
-                .modal-body {
-                    width: 50%;
-                    .row {
-                        .col-12 {
-                            .mb-3 {
-                                .form-label {
-
-                                }
-                                .form-control {
-
-                                }
-                                .item-thumb {
-                                    max-width: 515px;
-                                    width: 100%;
-                                }
-                            }
-                        }
-                    }
-                    .modal-footer {
-                        .btn {
-                            background-color: #02940c;
-                            color: #fff;
-                            &:hover {
-                                border-color: #02940c;
-                                box-shadow: 0 14px 28px #0c814bcc;
-                            }
-                        }
-                        
-                    }
+                flex-wrap: wrap;
+                .item {
+                    border: 1px solid #dddd;
+                    padding: 25px;
+                    margin: 20px 0 0 20px;
                 }
             }
         }

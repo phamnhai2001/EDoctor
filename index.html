@@ -13,357 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<style>
-  .user-photo {
-    width: 120px;
-    border-radius: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-  }
 
-  .container {
-    max-width: 100%;
-  }
-
-  .bg-danger {
-    background-color: #84b6a2 !important;
-  }
-
-  .navbar {
-    max-height: 90px;
-    background-color: #fff !important;
-  }
-
-  .img-fluid {
-    width: 170px;
-  }
-
-  .navbar .container {
-    max-width: 1200px;
-  }
-
-  .navbar-nav .nav-link,
-  .navbar-nav .show>.nav-link {
-    font-size: 18px;
-    color: black;
-    padding: 0 24px !important;
-  }
-
-  .masthead {
-    height: 100%;
-    min-height: 500px;
-    background-image: url('assets/images/banner.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 50px;
-  }
-
-  .masthead .container {
-    max-width: 1464px;
-    width: 100%;
-    display: flex;
-    flex-direction: inherit;
-    padding: 45px 20px;
-  }
-
-  .masthead .container .row .col-12 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left !important;
-  }
-
-  .masthead .container .row .col-12 .fw-light {
-    max-width: 600px;
-    margin-bottom: 60px;
-    color: #489a73;
-    font-size: 40px;
-    font-weight: 600 !important;
-    line-height: 55px;
-  }
-
-  .masthead .container .row .col-12 .lead {
-    max-width: 600px;
-    margin-bottom: 60px;
-    font-size: 16px;
-    line-height: 25px;
-    font-weight: 400;
-  }
-
-  .masthead .container .row .col-12 .btn-booking {
-    width: 192px;
-    height: 48px;
-    border: 1px solid rgb(0, 151, 123);
-    box-sizing: border-box;
-    border-radius: 8px;
-    padding: 12px 30px;
-    font-weight: 700;
-    background: #fff;
-    font-size: 18px;
-    line-height: 19px;
-    transition: all 350ms ease-out 0s;
-    color: rgb(0, 151, 123) !important;
-  }
-
-  .masthead .container .row .col-12 .btn-booking:hover {
-    border: 1px solid rgb(0, 151, 123);
-    background: rgb(0, 151, 123);
-    color: white !important;
-  }
-
-  .section-v1 {
-    margin-bottom: 90px;
-  }
-
-  .section-v1 .ttl {
-    text-align: center;
-    margin-bottom: 90px;
-  }
-
-  .section-v1 .ttl h2 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    white-space: pre-wrap;
-    text-align: center;
-    background-clip: text;
-    margin-bottom: 87px;
-  }
-
-  .section-v1 .ttl h2 span {
-    color: #3bad74;
-  }
-
-  .section-v1 .container {
-    max-width: 1464px;
-    width: 100%;
-  }
-
-  .section-v1 .container .row .col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 40px;
-  }
-
-  .section-v1 .container .row .col img {
-    max-width: 120px;
-    max-height: 120px;
-    margin-bottom: 15px;
-  }
-
-  .section-v1 .container .row .col h3 {
-    font-size: 18px;
-    line-height: 30px;
-  }
-
-  .section-v1 .container .row .col h3 .color {
-    color: #0d6efd;
-  }
-
-  .section-v1 .container .row .col .intro-description {
-    font-size: 14px;
-    color: #6c757d;
-    line-height: 22px;
-  }
-
-  .nav-tabs .nav-item .nav-link {
-    font-size: 18px;
-    font-weight: 600;
-    color: #b8b3ac;
-  }
-
-  .nav-tabs .nav-item .nav-link.active {
-    color: #01ad70;
-  }
-
-  /* slick slider */
-  .section-v2 {
-    position: relative;
-  }
-
-  .section-v2 .section-img {
-    position: absolute;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  img {
-    display: block;
-    max-width: 100%;
-  }
-
-  body,
-  input,
-  button,
-  textarea,
-  select {
-    outline: none;
-    font-size: 12px;
-    line-height: 1.5;
-    font-family: "Poppins", sans-serif;
-  }
-
-  input {
-    line-height: normal;
-  }
-
-  button {
-    cursor: pointer;
-  }
-
-  .section-v2 .inner {
-    padding-bottom: 50px;
-    margin: 0;
-    width: 100%;
-    padding-left: 560px;
-    margin-bottom: 160px;
-    padding-top: 160px;
-  }
-
-  .section-v2 .ttl {
-    display: flex;
-    justify-content: space-between;
-    max-width: 700px;
-    margin-bottom: 15px;
-    align-items: center;
-  }
-
-  .section-v2 .ttl h3 {
-    font-size: 30px;
-    font-weight: 500;
-  }
-
-  .section-v2 .ttl p {
-    font-size: 16px;
-
-  }
-
-  .section-v2 .ttl p a {
-    color: #3763af;
-  }
-
-  .image {
-    height: 350px;
-    margin-bottom: 20px;
-  }
-
-  .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-  }
-
-  .image-title {
-    font-size: 20px;
-    color: #8e8fb5;
-  }
-
-  .slick-initialized .slick-slide {
-    margin: 0 10px;
-  }
-
-  .slick-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    line-height: 1;
-    z-index: 5;
-    transition: all 0.2s linear;
-  }
-
-  .slick-arrow:hover {
-    background-color: #2cccff;
-    color: white;
-  }
-
-  .slick-prev {
-    left: 0;
-  }
-
-  .slick-next {
-    right: 0;
-  }
-
-  .slick-dots {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    gap: 0 20px;
-  }
-
-  .slick-dots button {
-    font-size: 0;
-    width: 15px;
-    height: 15px;
-    border-radius: 100rem;
-    background-color: #eee;
-    border: none;
-    outline: none;
-    transition: all 0.2s linear;
-  }
-
-  .slick-dots .slick-active button {
-    background-color: #2cccff;
-  }
-
-  /* section v3 */
-  .section-v3 {
-    max-width: 1464px;
-    margin: 0 auto;
-    width: 100%;
-    margin-bottom: 80px;
-  }
-
-  .section-v3 .container-fluid .ttl {
-    text-align: center;
-  }
-
-  .section-v3 .container-fluid .ttl h2 {
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 40px;
-    margin-bottom: 50px;
-  }
-
-  .section-v3 .container-fluid .ttl h2 p {
-    margin-bottom: 0;
-    color: #3bad74;
-    font-size: 25px;
-  }
-
-  .section-v3 .container-fluid .row .col-sm-3 .thumbnail img {
-    width: 100%;
-    height: 210px;
-    object-fit: cover;
-    border-radius: 16px 16px 0px 0px;
-    flex-shrink: 0;
-    margin-bottom: 15px;
-  }
-
-  .section-v3 .container-fluid .row .col-sm-3 .thumbnail .caption {
-    font-size: 20px;
-    line-height: 25px;
-    color: #000;
-    font-weight: 500;
-  }
-</style>
 
 <body>
 
@@ -378,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Trang chủ</a>
+              <a class="nav-link" href="index.html">Trang chủ</a>
             </li>
             <li class="nav-item">
               <a href="#myModal" role="button" class="nav-link btn" data-bs-toggle="modal">Đặt lịch</a>
@@ -387,7 +37,7 @@
               <a class="nav-link" href="#">Cộng đồng</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Cẩm nang</a>
+              <a class="nav-link" href="news.html">Cẩm nang</a>
             </li>
           </ul>
           <div class="d-flex">
@@ -528,9 +178,20 @@
                 <div class="col-6">
                   <div class="mb-3">
                     <label class="form-label">Ngày khám</label>
-                    <input type="date" class="form-control">
+                    <select class="form-control">
+                      <option value="Chuyên khoa 1">Chuyên khoa 1</option>
+                      <option value="Chuyên khoa 1">Chuyên khoa 1</option>
+                      <option value="Chuyên khoa 1">Chuyên khoa 1</option>
+                    </select>
                   </div>
                 </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="mb-3">
+                      <label class="form-label">Chuyên khoa</label>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
                 <div class="col-6">
                   <div class="mb-3">
                     <label class="form-label">Thời gian khám</label>
