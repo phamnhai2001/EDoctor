@@ -1005,3 +1005,33 @@ footer#footer .container .copyright .inner .item_thumb ul li img {
   background: none;
   padding: 8px 15px;
 }
+
+.bill > .inner {
+  max-width: 1200px;
+  width: 88.88%;
+  margin: 0 auto 80px;
+  padding: 5% 30px 0;
+}
+.bill > .inner .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.bill > .inner .navbar .search {
+  padding: 5px;
+}
+.bill > .inner .navbar .add {
+  padding: 5px;
+}
+.bill > .inner .navbar .upload {
+  padding: 5px;
+}
+.bill > .inner .list-bill .list-item .table-bordered tr, .bill > .inner .list-bill .list-item .table-bordered th, .bill > .inner .list-bill .list-item .table-bordered td {
+  border: 1px solid #dddd;
+}
+.bill > .inner .list-bill .list-item .table-bordered thead {
+  background-color: #3e8bbf;
+}

@@ -1,0 +1,39 @@
+.bill {
+    >.inner {
+        max-width: 1200px;
+        width: 88.88%;
+        margin: 0 auto 80px;
+        padding: 5% 30px 0;
+
+        .navbar {
+            display: flex;
+            justify-content: end;
+            .search {
+                padding: 5px;
+            }
+
+            .add {
+                padding: 5px;
+            }
+
+            .upload {
+                padding: 5px;
+            }
+        }
+
+        .list-bill {
+            .ttl {}
+
+            .list-item {
+                .table-bordered {
+                    tr,th,td {
+                        border: 1px solid #dddd;
+                    }
+                    thead {
+                        background-color: #3e8bbf;
+                    }
+                }
+            }
+        }
+    }
+}
