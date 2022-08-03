@@ -5,14 +5,55 @@
             width: 100%;
             margin: 0 auto;
             padding-top: 5%;
+
             .list-item {
                 list-style: none;
                 display: flex;
                 flex-wrap: wrap;
+                overflow-y: scroll;
+                overflow: hidden;
+                overflow: scroll;
+                flex-wrap: wrap;
+                height: 650px;
+                overflow-x: hidden;
+
                 .item {
                     border: 1px solid #dddd;
-                    padding: 25px;
                     margin: 20px 0 0 20px;
+
+                    .txt-content {
+                        border-bottom: 1px solid #dddd;
+                        padding: 25px;
+                        background: aliceblue;
+
+                        p {
+                            font-size: 14px;
+                            line-height: 25px;
+
+                            &.number {
+                                font-weight: 600;
+                                font-size: 16px;
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+
+                    .button {
+                        display: flex;
+                        justify-content: center;
+                        background-color: #dddd;
+
+                        button {
+                            border: none;
+                            background: none;
+                            padding: 8px 15px;
+
+                            &.detail {}
+
+                            &.add {}
+                        }
+                    }
+
                 }
             }
         }

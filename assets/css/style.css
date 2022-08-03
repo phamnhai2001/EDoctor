@@ -966,9 +966,42 @@ footer#footer .container .copyright .inner .item_thumb ul li img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  overflow-y: scroll;
+  overflow: hidden;
+  overflow: scroll;
+  flex-wrap: wrap;
+  height: 650px;
+  overflow-x: hidden;
 }
 #wrapper.appointment .inner .list-item .item {
   border: 1px solid #dddd;
-  padding: 25px;
   margin: 20px 0 0 20px;
+}
+#wrapper.appointment .inner .list-item .item .txt-content {
+  border-bottom: 1px solid #dddd;
+  padding: 25px;
+  background: aliceblue;
+}
+#wrapper.appointment .inner .list-item .item .txt-content p {
+  font-size: 14px;
+  line-height: 25px;
+}
+#wrapper.appointment .inner .list-item .item .txt-content p.number {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+#wrapper.appointment .inner .list-item .item .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #dddd;
+}
+#wrapper.appointment .inner .list-item .item .button button {
+  border: none;
+  background: none;
+  padding: 8px 15px;
 }
