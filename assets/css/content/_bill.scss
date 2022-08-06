@@ -14,23 +14,49 @@
 
             .add {
                 padding: 5px;
-            }
-
-            .upload {
-                padding: 5px;
+                .modal-title {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: #297bc3;
+                    font-weight: 500;
+                }
             }
         }
-
+        .search-bill {
+            .ttl {
+                font-size: 18px;
+                text-transform: uppercase;
+                color: #0c5886;
+                display: flex;
+                align-items: center;
+            }
+        }
         .list-bill {
-            .ttl {}
+            .ttl {
+                font-size: 18px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                color: #1b699d;
+            }
 
             .list-item {
                 .table-bordered {
+                    text-align: center;
+                    font-size: 14px;
+                    th {
+                        color: #fff;
+                    }
                     tr,th,td {
                         border: 1px solid #dddd;
                     }
                     thead {
                         background-color: #3e8bbf;
+                    }
+                    td {
+                        button {
+                            border: none;
+                            background: none;
+                        }
                     }
                 }
             }

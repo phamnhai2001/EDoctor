@@ -1026,12 +1026,43 @@ footer#footer .container .copyright .inner .item_thumb ul li img {
 .bill > .inner .navbar .add {
   padding: 5px;
 }
-.bill > .inner .navbar .upload {
-  padding: 5px;
+.bill > .inner .navbar .add .modal-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #297bc3;
+  font-weight: 500;
+}
+.bill > .inner .search-bill .ttl {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #0c5886;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bill > .inner .list-bill .ttl {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #1b699d;
+}
+.bill > .inner .list-bill .list-item .table-bordered {
+  text-align: center;
+  font-size: 14px;
+}
+.bill > .inner .list-bill .list-item .table-bordered th {
+  color: #fff;
 }
 .bill > .inner .list-bill .list-item .table-bordered tr, .bill > .inner .list-bill .list-item .table-bordered th, .bill > .inner .list-bill .list-item .table-bordered td {
   border: 1px solid #dddd;
 }
 .bill > .inner .list-bill .list-item .table-bordered thead {
   background-color: #3e8bbf;
+}
+.bill > .inner .list-bill .list-item .table-bordered td button {
+  border: none;
+  background: none;
 }

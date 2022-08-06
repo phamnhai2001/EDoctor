@@ -89,10 +89,6 @@
                                 <div class="modal-body">
                                     <form>
                                         <div class="mb-3">
-                                            <label for="recipient-name" class="col-form-label">Mã khách hàng</label>
-                                            <input type="text" class="form-control" id="recipient-name">
-                                        </div>
-                                        <div class="mb-3">
                                             <label for="recipient-name" class="col-form-label">Tên khách hàng</label>
                                             <input type="text" class="form-control" id="recipient-name">
                                         </div>
@@ -120,10 +116,6 @@
                                             <label for="recipient-name" class="col-form-label">Trạng thái</label>
                                             <input type="text" class="form-control" id="recipient-name">
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="message-text" class="col-form-label">Ghi chú</label>
-                                            <textarea class="form-control" id="message-text"></textarea>
-                                        </div>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
@@ -135,13 +127,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="upload">
-                    <button type="button" class="btn btn-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(255, 255, 255, 1);;">
-                            <path d="M11 15h2V9h3l-4-5-4 5h3z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path>
-                        </svg>
-                        Upload
-                    </button>
+            </div>
+            <div class="search-bill">
+                <div class="ttl">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(12, 88, 134, 1);"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8 8a2 2 0 0 0 2.828 0l7.172-7.172a2 2 0 0 0 0-2.828l-8-8zM7 9a2 2 0 1 1 .001-4.001A2 2 0 0 1 7 9z"></path></svg>
+                    Tìm kiếm hóa đơn
+                </div>
+                <div class="container">
+                    
                 </div>
             </div>
             <div class="list-bill">
@@ -158,18 +151,41 @@
                                 <th scope="col">Tổng tiền</th>
                                 <th scope="col">Ngày hóa đơn</th>
                                 <th scope="col">Trạng thái</th>
-                                <th scope="col">Ghi chú</th>
                                 <th scope="col">Thao tác</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">1</th>
+                                <td>1</td>
                                 <td>Khách hàng 1</td>
+                                <td>001</td>
+                                <td>Bác sĩ 1</td>
+                                <td>Khoa mắt</td>
+                                <td>200,000 đ</td>
                                 <td>20/7/2022</td>
                                 <td>Đã thanh toán</td>
-                                <td></td>
-                                <td></td>
+                                <td>
+                                    <button class="detail">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(36, 97, 134, 1);">
+                                            <path d="M14 12c-1.095 0-2-.905-2-2 0-.354.103-.683.268-.973C12.178 9.02 12.092 9 12 9a3.02 3.02 0 0 0-3 3c0 1.642 1.358 3 3 3 1.641 0 3-1.358 3-3 0-.092-.02-.178-.027-.268-.29.165-.619.268-.973.268z"></path>
+                                            <path d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.105-.316C21.927 11.617 19.633 5 12 5zm0 12c-5.351 0-7.424-3.846-7.926-5C4.578 10.842 6.652 7 12 7c5.351 0 7.424 3.846 7.926 5-.504 1.158-2.578 5-7.926 5z"></path></svg>
+                                    </button>
+                                    <button class="check">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(30, 84, 116, 1);">
+                                            <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="edit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(53, 161, 227, 1);;">
+                                            <path d="M4 21a1 1 0 0 0 .24 0l4-1a1 1 0 0 0 .47-.26L21 7.41a2 2 0 0 0 0-2.82L19.42 3a2 2 0 0 0-2.83 0L4.3 15.29a1.06 1.06 0 0 0-.27.47l-1 4A1 1 0 0 0 3.76 21 1 1 0 0 0 4 21zM18 4.41 19.59 6 18 7.59 16.42 6zM5.91 16.51 15 7.41 16.59 9l-9.1 9.1-2.11.52z"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="delete">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(223, 51, 51, 1);">
+                                            <path d="M6 7H5v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7H6zm4 12H8v-9h2v9zm6 0h-2v-9h2v9zm.618-15L15 2H9L7.382 4H3v2h18V4z"></path>
+                                        </svg>
+                                    </button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -183,5 +199,4 @@
     crossorigin="anonymous"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
 </html>
