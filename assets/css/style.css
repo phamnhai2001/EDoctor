@@ -1032,6 +1032,9 @@ footer#footer .container .copyright .inner .item_thumb ul li img {
   color: #297bc3;
   font-weight: 500;
 }
+.bill > .inner .search-bill {
+  margin-bottom: 30px;
+}
 .bill > .inner .search-bill .ttl {
   font-size: 18px;
   text-transform: uppercase;
@@ -1042,6 +1045,44 @@ footer#footer .container .copyright .inner .item_thumb ul li img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 8px;
+}
+.bill > .inner .search-bill .container {
+  padding: 40px 0;
+  background-color: aliceblue;
+}
+.bill > .inner .search-bill .container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bill > .inner .search-bill .container form .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 60px;
+  font-size: 14px;
+  line-height: 25px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+}
+.bill > .inner .search-bill .container form .form .name, .bill > .inner .search-bill .container form .form .status, .bill > .inner .search-bill .container form .form .number, .bill > .inner .search-bill .container form .form .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 50px 10px 0;
+}
+.bill > .inner .search-bill .container form .form .name input, .bill > .inner .search-bill .container form .form .status input, .bill > .inner .search-bill .container form .form .number input, .bill > .inner .search-bill .container form .form .date input {
+  width: 340px;
+  height: 40px;
 }
 .bill > .inner .list-bill .ttl {
   font-size: 18px;
@@ -1056,13 +1097,25 @@ footer#footer .container .copyright .inner .item_thumb ul li img {
 .bill > .inner .list-bill .list-item .table-bordered th {
   color: #fff;
 }
-.bill > .inner .list-bill .list-item .table-bordered tr, .bill > .inner .list-bill .list-item .table-bordered th, .bill > .inner .list-bill .list-item .table-bordered td {
+.bill > .inner .list-bill .list-item .table-bordered tr,
+.bill > .inner .list-bill .list-item .table-bordered th,
+.bill > .inner .list-bill .list-item .table-bordered td {
   border: 1px solid #dddd;
 }
 .bill > .inner .list-bill .list-item .table-bordered thead {
   background-color: #3e8bbf;
 }
-.bill > .inner .list-bill .list-item .table-bordered td button {
+.bill > .inner .list-bill .list-item .table-bordered td .modal-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #297bc3;
+  font-weight: 500;
+}
+.bill > .inner .list-bill .list-item .table-bordered td button.detail, .bill > .inner .list-bill .list-item .table-bordered td button.edit, .bill > .inner .list-bill .list-item .table-bordered td button.check, .bill > .inner .list-bill .list-item .table-bordered td button.delete {
   border: none;
   background: none;
+  outline: none;
+}
+.bill > .inner .list-bill .list-item .table-bordered td .modal-body form {
+  text-align: left;
 }

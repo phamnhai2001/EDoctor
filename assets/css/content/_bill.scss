@@ -8,12 +8,14 @@
         .navbar {
             display: flex;
             justify-content: end;
+
             .search {
                 padding: 5px;
             }
 
             .add {
                 padding: 5px;
+
                 .modal-title {
                     font-size: 18px;
                     text-transform: uppercase;
@@ -22,15 +24,47 @@
                 }
             }
         }
+
         .search-bill {
+            margin-bottom: 30px;
             .ttl {
                 font-size: 18px;
                 text-transform: uppercase;
                 color: #0c5886;
                 display: flex;
                 align-items: center;
+                margin-bottom: 8px;
+            }
+
+            .container {
+                padding: 40px 0;
+                background-color: aliceblue;
+                form {
+                    display: flex;
+                    align-items: center;
+                    .form {
+                        display: flex;
+                        padding: 0 60px;
+                        font-size: 14px;
+                        line-height: 25px;
+                        flex-wrap: wrap;
+                        width: 80%;
+                        .name, .status, .number, .date {
+                            display: flex;
+                            flex-direction: column;
+                            margin: 0 50px 10px 0;
+                            label {}
+    
+                            input {
+                                width: 340px;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
             }
         }
+
         .list-bill {
             .ttl {
                 font-size: 18px;
@@ -43,19 +77,40 @@
                 .table-bordered {
                     text-align: center;
                     font-size: 14px;
+
                     th {
                         color: #fff;
                     }
-                    tr,th,td {
+
+                    tr,
+                    th,
+                    td {
                         border: 1px solid #dddd;
                     }
+
                     thead {
                         background-color: #3e8bbf;
                     }
+
                     td {
+                        .modal-title {
+                            font-size: 18px;
+                            text-transform: uppercase;
+                            color: #297bc3;
+                            font-weight: 500;
+                        }
                         button {
-                            border: none;
-                            background: none;
+                            &.detail, &.edit, &.check, &.delete {
+                                border: none;
+                                background: none;
+                                outline: none;
+                                
+                            }
+                        }
+                        .modal-body {
+                            form {
+                                text-align: left;
+                            }
                         }
                     }
                 }
