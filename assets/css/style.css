@@ -1119,3 +1119,92 @@ footer#footer .container .copyright .inner .item_thumb ul li img {
 .bill > .inner .list-bill .list-item .table-bordered td .modal-body form {
   text-align: left;
 }
+
+.bill-detail > .inner {
+  max-width: 900px;
+  width: 100%;
+  margin: 70px auto;
+  padding: 3% 3% 10% 3%;
+  background: #f3f3f3;
+}
+.bill-detail > .inner .information {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.bill-detail > .inner .information .logo {
+  width: 160px;
+  margin-right: 20px;
+}
+.bill-detail > .inner .information .info-detail {
+  text-align: left;
+}
+.bill-detail > .inner .information .info-detail h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
+.bill-detail > .inner .information .info-detail p {
+  font-size: 14px;
+}
+.bill-detail > .inner .container {
+  margin-bottom: 60px;
+}
+.bill-detail > .inner .container .ttl-bill {
+  margin-bottom: 5px;
+}
+.bill-detail > .inner .container .ttl-bill h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+.bill-detail > .inner .container .ttl-bill p {
+  text-align: center;
+  font-size: 16px;
+}
+.bill-detail > .inner .container .number-bill {
+  margin-bottom: 20px;
+}
+.bill-detail > .inner .container .number-bill p {
+  font-size: 16px;
+  text-align: right;
+  font-weight: 600;
+}
+.bill-detail > .inner .container .info-customer {
+  margin-bottom: 30px;
+}
+.bill-detail > .inner .container .info-customer p {
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+.bill-detail > .inner .container .info-customer p span {
+  font-weight: 600;
+}
+.bill-detail > .inner .container .table-bordered {
+  font-size: 16px;
+  text-align: center;
+}
+.bill-detail > .inner .container .table-bordered thead {
+  background-color: #a5a8aa;
+  font-weight: 600;
+}
+.bill-detail > .inner .container .table-bordered tr, .bill-detail > .inner .container .table-bordered th, .bill-detail > .inner .container .table-bordered td {
+  border: 1px solid #dddd;
+}
+.bill-detail > .inner .container .total-cost p {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: right;
+}
+.bill-detail > .inner .footer-bill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.bill-detail > .inner .footer-bill .customer p, .bill-detail > .inner .footer-bill .cashier p {
+  font-size: 16px;
+}
