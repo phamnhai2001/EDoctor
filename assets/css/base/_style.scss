@@ -30,7 +30,7 @@
   .navbar-nav .show>.nav-link {
     font-size: 18px;
     color: black;
-    padding: 0 24px !important;
+    padding: 5px 24px !important;
   }
 
   .masthead {
@@ -549,3 +549,43 @@
         }
     }
 }
+.navbar-nav {
+  .nav-item {
+    .btn-light {
+      margin: 0 !important;
+      margin-left: 100px !important;
+    }
+    .dropdown {
+      border: 1px solid #dddddd;
+      display: none;
+      position: absolute;
+      background-color: #ffff;
+      list-style: none;
+      margin-left: 100px !important;
+      .dropdown_item {
+          border-bottom: 1px solid #dddddd;
+          padding: 10px 20px;
+          a {
+            font-size: 18px;
+            color: #9d9d9d;
+            &:hover {
+              color: #000;
+            }
+          }
+          &:last-child {
+              border-bottom: 0;
+          }
+          &:hover {
+              background-color: rgb(186, 190, 190);
+              color: white;
+          }
+      }
+    }
+    &:hover {
+      .dropdown {
+          display: block;
+      }
+  }
+  }
+}
+

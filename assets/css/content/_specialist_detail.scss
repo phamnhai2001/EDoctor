@@ -1,0 +1,153 @@
+#wrapper {
+    &.specialized_detail {
+        >.inner {
+            margin: 0 auto 80px;
+            padding-top: 6%;
+            .info_specialized {
+                background: #fafafa;
+                padding: 50px 120px;
+                margin-bottom: 40px;
+                .ttl {
+                    margin-bottom: 30px;
+                    h2 {
+                        font-size: 30px;
+                        line-height: 35px;
+                        text-align: left;
+                    }
+                }
+                .txt_desp {
+                    text-align: left;
+                    span {
+                       background-color: transparent !important;
+                    }
+                    strong {
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 35px;
+                    }
+                    ul {
+                        line-height: 24px;
+                        font-size: 16px;
+                        list-style: disc;
+                        margin-left: 30px;
+                    }
+                }
+            }
+            .list-doctor {
+                max-width: 1200px;
+                margin: 0 auto 30px;
+                display: flex;
+                justify-content: space-between;
+                .list_specialized {
+                    width: 65%;
+                    .item_specialized {
+                        background: #fff;
+                        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                        padding: 25px;
+                        margin-bottom: 15px;
+                        list-style: none;
+                        .container {
+                            display: flex;
+                            justify-content: space-between;
+                            .info_doctor {
+                                display: flex;
+                                .item_thumb {
+                                    margin-right: 15px;
+                                    img {
+                                        height: 130px;
+                                        border-radius: 50%;
+                                        object-fit: cover;
+                                        width: 130px;
+                                        margin-bottom: 10px;
+                                    }
+                                    p {
+                                        a {
+                                            font-size: 16px;
+                                            color: #45c3d2;
+                                            line-height: 20px;
+                                        }
+                                    }
+                                }
+                                .txt_desp {
+                                    text-align: left;
+                                    width: 66%;
+                                    h4 {
+                                        font-size: 22px;
+                                        color: #45c3d2;
+                                        line-height: 30px;
+                                    }
+                                    .txt_info {
+                                        font-size: 14px;
+                                        color: #555858;
+                                        line-height: 20px;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        line-height: 25px;
+                                        -webkit-line-clamp: 3;
+                                        height: 75px;
+                                        display: -webkit-box;
+                                        -webkit-box-orient: vertical;
+                                    }
+                                    h2, h3 {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .container-list {
+                    width: 30%;
+                    .ttl {
+                        display: block;
+                        position: relative;
+                        margin-bottom: 30px;
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid #e7e7e7;
+                        color: #404040;
+                        font-size: 18px;
+                        font-weight: 700;
+                        letter-spacing: 0.3px;
+                        text-transform: uppercase;
+                        &::after {
+                            display: block;
+                            position: absolute;
+                            bottom: -0.1875rem;
+                            left: 0;
+                            width: 5.625rem;
+                            height: 0.1875rem;
+                            content: "";
+                            background: linear-gradient(90deg,#009688 0,#009688 20%,#1de9b6)!important;
+                        }
+                    }
+                    .list {
+                        .item {
+                            list-style: none;
+                            border-bottom: 1px solid #e7e7e7;
+                            padding: 15px 0;
+                            a {
+                                .info {
+                                    display: flex;
+                                    .thumb {
+                                        height: 100px;
+                                        object-fit: cover;
+                                        width: 155px;
+                                        margin-right: 20px;
+                                    }
+                                    p {
+                                        font-size: 16px;
+                                        color: #000;
+                                    }
+                                }
+                            }
+                            &:last-child {
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

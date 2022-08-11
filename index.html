@@ -34,96 +34,116 @@
               <a href="#myModal" role="button" class="nav-link btn" data-bs-toggle="modal">Đặt lịch</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Cộng đồng</a>
+              <a class="nav-link" href="specialist.html">Chuyên khoa</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="news.html">Cẩm nang</a>
             </li>
-          </ul>
-          <div class="d-flex">
+            <li  class="nav-item">
 
-            <button type="button" class="btn btn-light ms-3 btn-success d-table my-5 mx-auto" data-bs-toggle="modal"
-              data-bs-target="#ModalForm">
-              Login/Register
-            </button>
-
-
-            <!-- Modal Form -->
-            <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <!-- Login Form -->
-                  <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                      <a class="nav-link active" data-bs-toggle="tab" href="#home">
-                        Login</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" data-bs-toggle="tab" href="#profile">
-                        Register</a>
-                    </li>
-                  </ul>
-                  <div class="tab-content">
-                    <div class="tab-pane active" id="home">
-                      <form action="">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn btn-light ms-3 btn-success d-table my-5 mx-auto" data-bs-toggle="modal"
+                  data-bs-target="#ModalForm">
+                  Login/Register
+                </button>
+                <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <!-- Login Form -->
+                      <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active" data-bs-toggle="tab" href="#home">
+                            Login</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" data-bs-toggle="tab" href="#profile">
+                            Register</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="home">
+                          <form action="">
+                            <div class="modal-header">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="mb-3">
+                                <label for="Username">Username<span class="text-danger">*</span></label>
+                                <input type="text" name="username" class="form-control" id="Username"
+                                  placeholder="Enter Username">
+                              </div>
+      
+                              <div class="mb-3">
+                                <label for="Password">Password<span class="text-danger">*</span></label>
+                                <input type="password" name="password" class="form-control" id="Password"
+                                  placeholder="Enter Password">
+                              </div>
+                              <div class="mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="remember" required>
+                                <label class="form-check-label" for="remember">Remember Me</label>
+                                <a href="#" class="float-end">Forgot Password</a>
+                              </div>
+                            </div>
+                            <div class="modal-footer pt-4">
+                              <button type="button" class="btn btn-success mx-auto w-100">Login</button>
+                            </div>
+                          </form>
                         </div>
-                        <div class="modal-body">
-                          <div class="mb-3">
-                            <label for="Username">Username<span class="text-danger">*</span></label>
-                            <input type="text" name="username" class="form-control" id="Username"
-                              placeholder="Enter Username">
-                          </div>
-
-                          <div class="mb-3">
-                            <label for="Password">Password<span class="text-danger">*</span></label>
-                            <input type="password" name="password" class="form-control" id="Password"
-                              placeholder="Enter Password">
-                          </div>
-                          <div class="mb-3">
-                            <input class="form-check-input" type="checkbox" value="" id="remember" required>
-                            <label class="form-check-label" for="remember">Remember Me</label>
-                            <a href="#" class="float-end">Forgot Password</a>
-                          </div>
+                        <div class="tab-pane" id="profile">
+                          <form action="">
+                            <div class="modal-header">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="mb-3">
+                                <label for="Email">Email<span class="text-danger">*</span></label>
+                                <input type="text" name="email" class="form-control" id="Email" placeholder="Enter Email">
+                              </div>
+                              <div class="mb-3">
+                                <label for="Username">Username<span class="text-danger">*</span></label>
+                                <input type="text" name="username" class="form-control" id="Username"
+                                  placeholder="Enter Username">
+                              </div>
+      
+                              <div class="mb-3">
+                                <label for="Password">Password<span class="text-danger">*</span></label>
+                                <input type="password" name="password" class="form-control" id="Password"
+                                  placeholder="Enter Password">
+                              </div>
+                            </div>
+                            <div class="modal-footer pt-4">
+                              <button type="button" class="btn btn-success mx-auto w-100">Register</button>
+                            </div>
+                          </form>
                         </div>
-                        <div class="modal-footer pt-4">
-                          <button type="button" class="btn btn-success mx-auto w-100">Login</button>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="tab-pane" id="profile">
-                      <form action="">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="mb-3">
-                            <label for="Email">Email<span class="text-danger">*</span></label>
-                            <input type="text" name="email" class="form-control" id="Email" placeholder="Enter Email">
-                          </div>
-                          <div class="mb-3">
-                            <label for="Username">Username<span class="text-danger">*</span></label>
-                            <input type="text" name="username" class="form-control" id="Username"
-                              placeholder="Enter Username">
-                          </div>
-
-                          <div class="mb-3">
-                            <label for="Password">Password<span class="text-danger">*</span></label>
-                            <input type="password" name="password" class="form-control" id="Password"
-                              placeholder="Enter Password">
-                          </div>
-                        </div>
-                        <div class="modal-footer pt-4">
-                          <button type="button" class="btn btn-success mx-auto w-100">Register</button>
-                        </div>
-                      </form>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
+                <ul class="dropdown">
+                  <li class="dropdown_item">
+                      <a href="appointment.html">
+                          Lịch hẹn
+                      </a>
+                  </li>
+                  <li class="dropdown_item">
+                      <a href="">
+                          Sua tai khoan
+                      </a>
+                  </li>
+                  <li class="dropdown_item">
+                      <a href="">
+                          Đổi mật khẩu
+                      </a>
+                  </li>
+                  <li class="dropdown_item">
+                      <a href="">
+                          Đăng xuất
+                      </a>
+                  </li>
+              </ul>
+            </li>
+          </ul>
+          
         </div>
       </div>
       </div>
