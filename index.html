@@ -256,7 +256,7 @@
         <h2><span>Trải nghiệm khám bệnh hiện đại </span>
           cùng EDoctor</h2>
       </div>
-      <div class="container">
+      <div class="container util_pc">
         <div class="row row-cols-4">
           <div class="col">
             <img src="assets/images/dat-kham.png" alt="">
@@ -295,10 +295,48 @@
           </div>
         </div>
       </div>
+      <div id="slideshow" class="util_sp">
+        <div>
+          <img src="assets/images/dat-kham.png" alt="">
+            <h3>Đặt khám <span class="color">từ xa</span></h3>
+            <div class="intro-description">
+              Bác sĩ của Edoctor luôn sẵn sàng tư vấn và chăm sóc sức khỏe cho bạn mọi lúc mọi nơi qua video & chat
+            </div>
+        </div>
+        <div>
+          <img src="assets/images/doi-ngu.png" alt="">
+            <h3>Đội ngũ chuyên gia
+              và cơ sở y tế <span class="color">hàng đầu</span></h3>
+            <div class="intro-description">
+              Dễ dàng kết nối với các bác sĩ ưu tú, tận tâm, có chuyên môn cao đến từ các BV tuyến trung ương & phòng
+              khám
+              uy tín
+            </div>
+        </div>
+        <div>
+          <img src="assets/images//tiep-don.png" alt="">
+            <h3>Tiếp đón <span class="color">ưu tiên</span>
+              với nhiều quyền lợi đặc biệt</h3>
+            <div class="intro-description">
+              Đặt khám hẹn trước tại các bệnh viện trung ương, phòng khám hàng đầu cùng nhiều đặc quyền dành riêng cho
+              bạn
+              và gia đình
+            </div>
+        </div>
+       <div>
+        <img src="assets/images/gia-kham.png" alt="">
+        <h3>Giá khám <span class="color">bằng với giá</span>
+          tại cơ sở y tế</h3>
+        <div class="intro-description">
+          Không những vậy còn giúp bạn tiết kiệm thời gian và các chi phí phát sinh khác
+        </div>
+        </div>
+    </div>
     </section>
     <section class="section-v2">
       <div class="section-img">
-        <img src="assets/images/section3_ads.svg" alt="">
+        <img class="util_pc" src="assets/images/section3_ads.svg" alt="">
+        <img class="util_sp" src="assets/images/image.svg" alt="">
       </div>
       <div class="inner">
         <div class="ttl">
@@ -342,7 +380,7 @@
             <h3 class="image-title">Khoa xương khớp</h3>
           </div>
         </div>
-      </div>
+        
 
     </section>
     <div class="section-v3">
@@ -511,6 +549,18 @@
           // autoplaySpeed: 1000,
         });
       });
+    </script>
+    <script>
+      $("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
     </script>
 </body>
 

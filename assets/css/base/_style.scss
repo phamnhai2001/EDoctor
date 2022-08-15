@@ -17,13 +17,38 @@
     max-height: 90px;
     background-color: #fff !important;
   }
-
+  .navbar-brand {
+    @include sp {
+      padding-left: get_sp(30);
+    }
+  }
+  .navbar-toggler {
+    @include sp {
+      padding: 0 get_sp(30);
+    }
+  }
   .img-fluid {
     width: 170px;
+    @include sp {
+      width: get_sp(130);
+    }
   }
-
+  .navbar-collapse {
+    @include sp {
+      background-color: #ffff;
+    }
+  }
+  .nav-link {
+    @include sp {
+      display: flex;
+    }
+  }
   .navbar .container {
     max-width: 1200px;
+    @include sp {
+      max-width: 100%;
+      padding: 0;
+    }
   }
 
   .navbar-nav .nav-link,
@@ -31,8 +56,15 @@
     font-size: 18px;
     color: black;
     padding: 5px 24px !important;
+    @include sp {
+      font-size: get_sp(30);
+      line-height: get_sp(80);
+      padding: get_sp(5) get_sp(60) !important;
+    }
   }
-
+  .navbar-toggler-icon {
+    background-image: url('../../assets/images/menu.png');
+  }
   .masthead {
     height: 100%;
     min-height: 500px;
@@ -41,6 +73,9 @@
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 50px;
+    @include sp {
+      background-image: url('../../assets/images/banner-mobile.png');
+    }
   }
 
   .masthead .container {
@@ -170,36 +205,15 @@
 
   .section-v2 .section-img {
     position: absolute;
+    @include sp {
+      position: unset;
+    }
   }
-
-  a {
-    text-decoration: none;
+  .section-v2 .section-img img{
+    @include sp {
+      width: 100%;
+    }
   }
-
-  img {
-    display: block;
-    max-width: 100%;
-  }
-
-  body,
-  input,
-  button,
-  textarea,
-  select {
-    outline: none;
-    font-size: 12px;
-    line-height: 1.5;
-    font-family: "Poppins", sans-serif;
-  }
-
-  input {
-    line-height: normal;
-  }
-
-  button {
-    cursor: pointer;
-  }
-
   .section-v2 .inner {
     padding-bottom: 50px;
     margin: 0;
@@ -207,8 +221,28 @@
     padding-left: 560px;
     margin-bottom: 160px;
     padding-top: 160px;
+    @include sp {
+      padding-bottom: 0;
+      padding-left: 0;
+      margin-bottom: 0;
+      padding-top: 0;
+    }
   }
+  #slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 500px; 
+    height: 500px; 
+    padding: 10px; 
+}
 
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
   .section-v2 .ttl {
     display: flex;
     justify-content: space-between;
@@ -361,10 +395,12 @@
     margin-bottom: 15px;
   }
   .section-v3 .container-fluid .row .col-sm-3 .thumbnail .caption {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25px;
+    text-decoration: underline;
     color: #000;
-    font-weight: 500;
+    font-weight: 600;
+    text-underline-offset: 2px;
   }
   #booking {
     .container {
@@ -571,10 +607,21 @@
     }
 }
 .navbar-nav {
+  @include sp {
+    padding-bottom: get_sp(30);
+  }
   .nav-item {
     .btn-light {
       margin: 0 !important;
       margin-left: 100px !important;
+      @include sp {
+        background: none;
+        border: none;
+        padding: get_sp(5) get_sp(60) !important;
+        margin-left: 0 !important;
+        font-size: get_sp(30);
+        line-height: get_sp(80);
+      }
     }
     .dropdown {
       border: 1px solid #dddddd;

@@ -70,7 +70,7 @@
     }
 }
 /* automatic size vw */
-@function get_vw($fsize, $viewport:375) {
+@function get_sp($fsize, $viewport:768) {
     $rate: 100 / $viewport;
     @return $rate * $fsize * 1vw;
 }
@@ -111,4 +111,10 @@
                     animation: slideIn $sec $ease-cubic #{$delay+$i*0.1} forwards;
         }
     }
+}
+@mixin util_pc {
+    display: none;
+}
+@mixin util_sp {
+    display: block;
 }
