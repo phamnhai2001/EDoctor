@@ -5,20 +5,39 @@ footer {
             background-color: rgb(58, 181, 138);
             padding: 30px 0 0;
             color: #fff;
+            @include sp {
+                padding: get_sp(30) 0 0;
+            }
             >.inner {
                 max-width: 80%;
                 display: flex;
                 margin: 0 auto;
                 justify-content: space-between;
                 text-align: left;
+                @include sp {
+                    max-width: 100%;
+                    flex-direction: column;
+                    padding: 0 get_sp(90);
+                }
                 .address {
                     margin-bottom: 30px;
+                    border-bottom: 1px solid;
+                    @include sp {
+                        margin-bottom: get_sp(30);
+                    }
                     .logo {
                         margin-bottom: 30px;
+                        @include sp {
+                            margin-bottom: get_sp(30);
+                        }
                         img {
                             width: 204px;
                             object-fit: cover;
                             height: 90px;
+                            @include sp {
+                                width: get_sp(204);
+                                height: get_sp(90);
+                            }
                         }
                     }
                     .item_content {
@@ -26,15 +45,25 @@ footer {
                             li {
                                 display: flex;
                                 margin-bottom: 10px;
+                                @include sp {
+                                    margin-bottom: get_sp(10);
+                                }
                                 i {
                                     margin-right: 10px;
                                     color: #fff;
+                                    @include sp {
+                                        margin-right: get_sp(10);
+                                    }
                                 }
                                 p {
                                     color: #4b566b;
                                     font-size: 16px;
                                     line-height: 20px;
                                     color: #fff;
+                                    @include sp {
+                                        font-size: get_sp(16);
+                                        line-height: get_sp(20);
+                                    }
                                 }
                             }
                         }
@@ -42,57 +71,102 @@ footer {
                 }
                 .about_us {
                     margin-bottom: 30px;
+                    border-bottom: 1px solid;
+                    @include sp {
+                        margin-bottom: get_sp(30);
+                    }
                     .title {
                         margin-bottom: 25px;
+                        @include sp {
+                            margin-bottom: get_sp(25);
+                        }
                         h3 {
                             font-size: 20px;
                             line-height: 30px;
                             font-weight: 600;
+                            @include sp {
+                                font-size: get_sp(20);
+                                line-height: get_sp(30);
+                            }
                         }
                     }
                     ul {
                         li {
                             margin-bottom: 10px;
                             list-style: none;
+                            @include sp {
+                                margin-bottom: get_sp(10);
+                            }
                             a {
                                 color: #fff;
                                 font-size: 16px;
                                 line-height: 20px;
+                                @include sp {
+                                    font-size: get_sp(16);
+                                    line-height: get_sp(20);
+                                }
                             }
                         }
                     }
                 }
                 .contact {
                     margin-bottom: 30px;
+                    @include sp {
+                        margin-bottom: get_sp(30);
+                    }
                     .hotline {
                         margin-bottom: 25px;
+                        @include sp {
+                            margin-bottom: get_sp(25);
+                        }
                         .title {
                             margin-bottom: 25px;
+                            @include sp {
+                                margin-bottom: get_sp(25);
+                            }
                             h3 {
                                 font-size: 20px;
                                 line-height: 30px;
                                 font-weight: 600;
+                                @include sp {
+                                    font-size: get_sp(20);
+                                    line-height: get_sp(30);
+                                }
                             }
                         }
                         .item_thumb {
                             display: flex;
                             align-items: center;
                             margin-bottom: 10px;
+                            @include sp {
+                                margin-bottom: get_sp(10);
+                            }
                             i {
                                 color: #fff;
                                 font-size: 24px;
                                 margin-right: 10px;
+                                @include sp {
+                                    font-size: get_sp(24);
+                                    margin-right: get_sp(10);
+                                }
                             }
                             p {
                                 font-size: 40px;
                                 font-weight: bold;
                                 color: #fff;
+                                @include sp {
+                                    font-size: get_sp(40);
+                                }
+
                             }
                         }
                         .txt_desp {
                             p {
                                 font-size: 16px;
                                 color: #fff;
+                                @include sp {
+                                    font-size: get_sp(16);
+                                }
                             }
                         }
                     }
@@ -101,16 +175,25 @@ footer {
             .copyright {
                 padding: 25px 0;
                background-color:  rgb(52, 163, 124);
+               @include sp {
+                padding: get_sp(25) get_sp(90);
+               }
                 .inner {
                     display: flex;
                     justify-content: space-between;
                     max-width: 80%;
                     margin: 0 auto;
                     align-items: center;
+                    @include sp {
+                        max-width: 100%;
+                    }
                 .txt_desp {
                     p {
                         font-size: 12px;
                         color: #fff;
+                        @include sp {
+                            font-size: get_sp(12);
+                        }
                     }
                 }
                 .item_thumb {
@@ -119,8 +202,14 @@ footer {
                         li {
                             margin-right: 10px;
                             list-style: none;
+                            @include sp {
+                                margin-right: get_sp(10);
+                            }
                             img {
                                 height: 40px;
+                                @include sp {
+                                    height: get_sp(40);
+                                }
                             }
                         }
                     }

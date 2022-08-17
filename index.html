@@ -239,7 +239,7 @@
       <div class="container h-100">
         <div class="row h-100 align-items-center">
           <div class="col-12 text-center">
-            <h1 class="fw-light">Ứng dụng đặt lịch khám
+            <h1 class="fw-light">Edoctor | Website đặt lịch khám
               online hàng đầu</h1>
             <p class="lead">Người tiêu dùng thông thái, hãy khám bệnh thông minh. Bạn là người tiêu dùng thông thái, bạn
               yêu gia đình hơn chính bản thân mình. Hãy cùng EDoctor chăm sóc sức khỏe cho bản thân và gia đình để mỗi
@@ -248,6 +248,12 @@
               <span> Đặt khám ngay</span>
             </button>
           </div>
+          
+        </div>
+      </div>
+      <div class="background-responsive util_sp">
+        <div class="item-thumb">
+          <img src="assets/images/banner-mobile.png" alt="">
         </div>
       </div>
     </section>
@@ -296,14 +302,14 @@
         </div>
       </div>
       <div id="slideshow" class="util_sp">
-        <div>
+        <div class="slideshow-item">
           <img src="assets/images/dat-kham.png" alt="">
             <h3>Đặt khám <span class="color">từ xa</span></h3>
             <div class="intro-description">
               Bác sĩ của Edoctor luôn sẵn sàng tư vấn và chăm sóc sức khỏe cho bạn mọi lúc mọi nơi qua video & chat
             </div>
         </div>
-        <div>
+        <div  class="slideshow-item">
           <img src="assets/images/doi-ngu.png" alt="">
             <h3>Đội ngũ chuyên gia
               và cơ sở y tế <span class="color">hàng đầu</span></h3>
@@ -313,7 +319,7 @@
               uy tín
             </div>
         </div>
-        <div>
+        <div  class="slideshow-item">
           <img src="assets/images//tiep-don.png" alt="">
             <h3>Tiếp đón <span class="color">ưu tiên</span>
               với nhiều quyền lợi đặc biệt</h3>
@@ -323,7 +329,7 @@
               và gia đình
             </div>
         </div>
-       <div>
+       <div  class="slideshow-item">
         <img src="assets/images/gia-kham.png" alt="">
         <h3>Giá khám <span class="color">bằng với giá</span>
           tại cơ sở y tế</h3>
@@ -341,10 +347,9 @@
       <div class="inner">
         <div class="ttl">
           <h3>Dịch vụ nổi bật</h3>
-          <p><a href="">Xem tất cả<span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                  style="fill: rgba(55, 99, 175, 1)">
-                  <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
-                </svg></span></a></p>
+          <p><a href="">Xem tất cả<span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(55, 99, 175, 1);">
+            <path d="m19 12-7-6v5H6v2h6v5z"></path></svg></span>
+          </a></p>
         </div>
         <div class="image-slider">
 
@@ -545,8 +550,6 @@
               },
             },
           ],
-          // autoplay: true,
-          // autoplaySpeed: 1000,
         });
       });
     </script>
@@ -555,7 +558,7 @@
 
 setInterval(function() { 
   $('#slideshow > div:first')
-    .fadeOut(1000)
+    .fadeOut(400)
     .next()
     .fadeIn(1000)
     .end()
