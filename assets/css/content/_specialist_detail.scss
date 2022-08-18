@@ -2,26 +2,37 @@
     &.specialized_detail {
         >.inner {
             margin: 0 auto 80px;
-
+            @include sp {
+                margin: 0 auto get_sp(80);
+            }
             .info_specialized {
                 background: #fafafa;
                 padding: 50px 120px;
                 margin-bottom: 40px;
-
+                @include sp {
+                    padding: get_sp(50) get_sp(120);
+                    margin-bottom: get_sp(40);
+                }
                 .container_specialized {
                     max-width: 1200px;
                     margin: 0 auto;
-
+                    @include sp {
+                        max-width: 100%;
+                    }
                     .ttl {
                         margin-bottom: 30px;
-
+                        @include sp {
+                            margin-bottom: get_sp(30);
+                        }
                         h2 {
                             font-size: 26px;
                             font-weight: bold;
                             text-align: left;
+                            @include sp {
+                                font-size: get_sp(26);
+                            }
                         }
                     }
-
                     .txt_desp {
                         .text {
                             text-align: left;
@@ -34,16 +45,28 @@
                                 font-size: 18px;
                                 font-weight: 600;
                                 line-height: 35px;
+                                @include sp {
+                                    font-size: get_sp(18);
+                                    line-height: get_sp(35);
+                                }
                             }
                             ul {
                                 line-height: 24px;
                                 font-size: 16px;
                                 list-style: disc;
                                 margin-left: 30px;
+                                @include sp {
+                                    line-height: get_sp(24);
+                                    font-size: get_sp(16);
+                                    margin-left: get_sp(30);
+                                }
                             }
                             &.show-more-height {
                                 height: 90px;
                                 overflow: hidden;
+                                @include sp {
+                                    height: get_sp(90);
+                                }
                             }
                         }
                         .show-more {
@@ -54,6 +77,11 @@
                             height: 20px;
                             text-align: left;
                             cursor: pointer;
+                            @include sp {
+                                font-size: get_sp(12);
+                                padding-top: get_sp(5);
+                                height: get_sp(20);
+                            }
                         }
                     }
                 }
@@ -64,33 +92,49 @@
                 margin: 0 auto 30px;
                 display: flex;
                 justify-content: space-between;
-
+                @include sp {
+                    max-width: 100%;
+                    margin: 0 auto get_sp(30);
+                    flex-direction: column;
+                    padding: get_sp(10) get_sp(80);
+                }
                 .list_specialized {
                     width: 65%;
-
+                    @include sp {
+                        width: 100%;
+                        margin-bottom: get_sp(50);
+                    }
                     .item_specialized {
                         background: #fff;
                         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                         padding: 25px;
                         margin-bottom: 15px;
                         list-style: none;
-
+                        @include sp {
+                            padding: get_sp(25);
+                            margin-bottom: get_sp(15);
+                        }
                         .container {
                             display: flex;
                             justify-content: space-between;
-
                             .info_doctor {
                                 display: flex;
-
                                 .item_thumb {
                                     margin-right: 15px;
-
+                                    @include sp {
+                                        margin-right: get_sp(15);
+                                    }
                                     img {
                                         height: 130px;
                                         border-radius: 50%;
                                         object-fit: cover;
                                         width: 130px;
                                         margin-bottom: 10px;
+                                        @include sp {
+                                            height: get_sp(130);
+                                            width: get_sp(130);
+                                            margin-right: get_sp(10);
+                                        }
                                     }
 
                                     p {
@@ -98,6 +142,10 @@
                                             font-size: 16px;
                                             color: #45c3d2;
                                             line-height: 20px;
+                                            @include sp {
+                                                font-size: get_sp(16);
+                                                line-height: get_sp(20);
+                                            }
                                         }
                                     }
                                 }
@@ -110,12 +158,15 @@
                                         font-size: 22px;
                                         color: #45c3d2;
                                         line-height: 30px;
+                                        @include sp {
+                                            font-size: get_sp(22);
+                                            line-height: get_sp(30);
+                                        }
                                     }
 
                                     .txt_info {
                                         font-size: 14px;
                                         color: #555858;
-                                        line-height: 20px;
                                         overflow: hidden;
                                         text-overflow: ellipsis;
                                         line-height: 25px;
@@ -123,6 +174,11 @@
                                         height: 75px;
                                         display: -webkit-box;
                                         -webkit-box-orient: vertical;
+                                        @include sp {
+                                            font-size: get_sp(14);
+                                            line-height: get_sp(20);
+                                            height: get_sp(75);
+                                        }
                                     }
 
                                     h2,
@@ -137,7 +193,9 @@
 
                 .container-list {
                     width: 30%;
-
+                    @include sp {
+                        width: 100%;
+                    }
                     .ttl {
                         display: block;
                         position: relative;
@@ -149,6 +207,11 @@
                         font-weight: 700;
                         letter-spacing: 0.3px;
                         text-transform: uppercase;
+                        @include sp {
+                            margin-bottom: get_sp(30);
+                            font-size: get_sp(18);
+                            padding-bottom: get_sp(10);
+                        }
 
                         &::after {
                             display: block;
@@ -163,11 +226,18 @@
                     }
 
                     .list {
+                        @include sp {
+                            height: get_sp(250);
+                            overflow: hidden;
+                            overflow-y: auto;
+                        }
                         .item {
                             list-style: none;
                             border-bottom: 1px solid #e7e7e7;
                             padding: 15px 0;
-
+                            @include sp {
+                                padding: get_sp(15) 0;
+                            }
                             a {
                                 .info {
                                     display: flex;
@@ -177,11 +247,19 @@
                                         object-fit: cover;
                                         width: 155px;
                                         margin-right: 20px;
+                                        @include sp {
+                                            height: get_sp(100);
+                                            width: get_sp(155);
+                                            margin-right: get_sp(20);
+                                        }
                                     }
 
                                     p {
                                         font-size: 16px;
                                         color: #000;
+                                        @include sp {
+                                            font-size: get_sp(16);
+                                        }
                                     }
                                 }
                             }

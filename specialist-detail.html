@@ -21,6 +21,7 @@
     cursor: pointer;
     display: block;
   }
+
   .docthem-nut-an {
     font-size: 14px;
     color: #288ad6;
@@ -28,473 +29,479 @@
     cursor: pointer;
     display: block;
   }
+
   .docthem-an .docthem-nut-an {
     display: none;
   }
+
   .docthem-hien .docthem-nut-hien {
     display: none;
   }
+
   .docthem-an .docthem-noidung {
-  max-height: 35px;
+    max-height: 35px;
     overflow: hidden;
-}
+  }
 </style>
+
 <body>
 
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-          <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="Logo" class="img-fluid" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Trang chủ</a>
-              </li>
-              <li class="nav-item">
-                <a href="#myModal" role="button" class="nav-link btn" data-bs-toggle="modal">Đặt lịch</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="specialist.html">Chuyên khoa</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="news.html">Cẩm nang</a>
-              </li>
-              <li  class="nav-item">
-  
-                  <button type="button" class="btn btn-light ms-3 btn-success d-table my-5 mx-auto" data-bs-toggle="modal"
-                    data-bs-target="#ModalForm">
-                    Login/Register
-                  </button>
-                  <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                      <div class="modal-content">
-                        <!-- Login Form -->
-                        <ul class="nav nav-tabs">
-                          <li class="nav-item">
-                            <a class="nav-link active" data-bs-toggle="tab" href="#home">
-                              Login</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#profile">
-                              Register</a>
-                          </li>
-                        </ul>
-                        <div class="tab-content">
-                          <div class="tab-pane active" id="home">
-                            <form action="">
-                              <div class="modal-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                <div class="mb-3">
-                                  <label for="Username">Username<span class="text-danger">*</span></label>
-                                  <input type="text" name="username" class="form-control" id="Username"
-                                    placeholder="Enter Username">
-                                </div>
-        
-                                <div class="mb-3">
-                                  <label for="Password">Password<span class="text-danger">*</span></label>
-                                  <input type="password" name="password" class="form-control" id="Password"
-                                    placeholder="Enter Password">
-                                </div>
-                                <div class="mb-3">
-                                  <input class="form-check-input" type="checkbox" value="" id="remember" required>
-                                  <label class="form-check-label" for="remember">Remember Me</label>
-                                  <a href="#" class="float-end">Forgot Password</a>
-                                </div>
-                              </div>
-                              <div class="modal-footer pt-4">
-                                <button type="button" class="btn btn-success mx-auto w-100">Login</button>
-                              </div>
-                            </form>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="Logo" class="img-fluid" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a href="#myModal" role="button" class="nav-link btn" data-bs-toggle="modal">Đặt lịch</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="specialist.html">Chuyên khoa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">Cẩm nang</a>
+            </li>
+            <li class="nav-item">
+
+              <button type="button" class="btn btn-light ms-3 btn-success d-table my-5 mx-auto" data-bs-toggle="modal"
+                data-bs-target="#ModalForm">
+                Login/Register
+              </button>
+              <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <!-- Login Form -->
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#home">
+                          Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#profile">
+                          Register</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="home">
+                        <form action="">
+                          <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
-                          <div class="tab-pane" id="profile">
-                            <form action="">
-                              <div class="modal-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                <div class="mb-3">
-                                  <label for="Email">Email<span class="text-danger">*</span></label>
-                                  <input type="text" name="email" class="form-control" id="Email" placeholder="Enter Email">
-                                </div>
-                                <div class="mb-3">
-                                  <label for="Username">Username<span class="text-danger">*</span></label>
-                                  <input type="text" name="username" class="form-control" id="Username"
-                                    placeholder="Enter Username">
-                                </div>
-        
-                                <div class="mb-3">
-                                  <label for="Password">Password<span class="text-danger">*</span></label>
-                                  <input type="password" name="password" class="form-control" id="Password"
-                                    placeholder="Enter Password">
-                                </div>
-                              </div>
-                              <div class="modal-footer pt-4">
-                                <button type="button" class="btn btn-success mx-auto w-100">Register</button>
-                              </div>
-                            </form>
+                          <div class="modal-body">
+                            <div class="mb-3">
+                              <label for="Username">Username<span class="text-danger">*</span></label>
+                              <input type="text" name="username" class="form-control" id="Username"
+                                placeholder="Enter Username">
+                            </div>
+
+                            <div class="mb-3">
+                              <label for="Password">Password<span class="text-danger">*</span></label>
+                              <input type="password" name="password" class="form-control" id="Password"
+                                placeholder="Enter Password">
+                            </div>
+                            <div class="mb-3">
+                              <input class="form-check-input" type="checkbox" value="" id="remember" required>
+                              <label class="form-check-label" for="remember">Remember Me</label>
+                              <a href="#" class="float-end">Forgot Password</a>
+                            </div>
                           </div>
-                        </div>
+                          <div class="modal-footer pt-4">
+                            <button type="button" class="btn btn-success mx-auto w-100">Login</button>
+                          </div>
+                        </form>
                       </div>
-                    </div>
-                  </div>
-                  <ul class="dropdown">
-                    <li class="dropdown_item">
-                        <a href="appointment.html">
-                            Lịch hẹn
-                        </a>
-                    </li>
-                    <li class="dropdown_item">
-                        <a href="">
-                            Sua tai khoan
-                        </a>
-                    </li>
-                    <li class="dropdown_item">
-                        <a href="">
-                            Đổi mật khẩu
-                        </a>
-                    </li>
-                    <li class="dropdown_item">
-                        <a href="">
-                            Đăng xuất
-                        </a>
-                    </li>
-                </ul>
-              </li>
-            </ul>
-            
-          </div>
-        </div>
-        </div>
-      </nav>
-    </header>
-    <div class="bs-example">
-      <div id="myModal" class="modal fade" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <form action="">
-              <div class="modal-header">
-                <h5 class="modal-title">Đăng ký khám</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-              <div class="modal-inner">
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="mb-3">
-                        <div class="item-thumb">
-                          <img src="assets/images/thumbnail-20210223031556.jpg" alt="">
-                        </div>
+                      <div class="tab-pane" id="profile">
+                        <form action="">
+                          <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="mb-3">
+                              <label for="Email">Email<span class="text-danger">*</span></label>
+                              <input type="text" name="email" class="form-control" id="Email" placeholder="Enter Email">
+                            </div>
+                            <div class="mb-3">
+                              <label for="Username">Username<span class="text-danger">*</span></label>
+                              <input type="text" name="username" class="form-control" id="Username"
+                                placeholder="Enter Username">
+                            </div>
+
+                            <div class="mb-3">
+                              <label for="Password">Password<span class="text-danger">*</span></label>
+                              <input type="password" name="password" class="form-control" id="Password"
+                                placeholder="Enter Password">
+                            </div>
+                          </div>
+                          <div class="modal-footer pt-4">
+                            <button type="button" class="btn btn-success mx-auto w-100">Register</button>
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="modal-body">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="mb-3">
-                        <label class="form-label">Họ tên</label>
-                        <input type="text" class="form-control">
+              </div>
+              <ul class="dropdown">
+                <li class="dropdown_item">
+                  <a href="appointment.html">
+                    Lịch hẹn
+                  </a>
+                </li>
+                <li class="dropdown_item">
+                  <a href="">
+                    Sua tai khoan
+                  </a>
+                </li>
+                <li class="dropdown_item">
+                  <a href="">
+                    Đổi mật khẩu
+                  </a>
+                </li>
+                <li class="dropdown_item">
+                  <a href="">
+                    Đăng xuất
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <div class="bs-example">
+    <div id="myModal" class="modal fade" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form action="">
+            <div class="modal-header">
+              <h5 class="modal-title">Đăng ký khám</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-inner">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <div class="item-thumb">
+                        <img src="assets/images/thumbnail-20210223031556.jpg" alt="">
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="mb-3">
-                        <label class="form-label">Ngày sinh</label>
-                        <input type="date" class="form-control">
-                      </div>
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <label class="form-label">Họ tên</label>
+                      <input type="text" class="form-control">
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="mb-3">
-                        <label class="form-label">Số điện thoại</label>
-                        <input type="phone" class="form-control">
-                      </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <label class="form-label">Ngày sinh</label>
+                      <input type="date" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <label class="form-label">Số điện thoại</label>
+                      <input type="phone" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="mb-3">
+                      <label class="form-label">Ngày khám</label>
+                      <select class="form-control">
+                        <option value="Chuyên khoa 1">Chuyên khoa 1</option>
+                        <option value="Chuyên khoa 1">Chuyên khoa 1</option>
+                        <option value="Chuyên khoa 1">Chuyên khoa 1</option>
+                      </select>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-6">
                       <div class="mb-3">
-                        <label class="form-label">Ngày khám</label>
+                        <label class="form-label">Chuyên khoa</label>
+                        <input type="date" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label class="form-label">Thời gian khám</label>
                         <select class="form-control">
-                          <option value="Chuyên khoa 1">Chuyên khoa 1</option>
-                          <option value="Chuyên khoa 1">Chuyên khoa 1</option>
-                          <option value="Chuyên khoa 1">Chuyên khoa 1</option>
+                          <option value="Buổi sáng">Buổi sáng</option>
+                          <option value="Buổi chiều">Buổi chiều</option>
+                          <option value="Buổi buổi tối">Buổi buổi tối</option>
                         </select>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-6">
-                        <div class="mb-3">
-                          <label class="form-label">Chuyên khoa</label>
-                          <input type="date" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="mb-3">
-                          <label class="form-label">Thời gian khám</label>
-                          <select class="form-control">
-                            <option value="Buổi sáng">Buổi sáng</option>
-                            <option value="Buổi chiều">Buổi chiều</option>
-                            <option value="Buổi buổi tối">Buổi buổi tối</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn">Đặt lịch ngay</button>
-                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn">Đặt lịch ngay</button>
                   </div>
                 </div>
-  
               </div>
-            </form>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="wrapper" class="specialized_detail">
+      <div class="inner">
+        <div class="info_specialized">
+          <div class="container_specialized">
+            <div class="ttl">
+              <h2>Nhi khoa</h2>
+            </div>
+            <div class="txt_desp">
+              <p class="text show-more-height">
+                Bác sĩ Thần kinh giỏi
+                Danh sách các giáo sư, bác sĩ chuyên khoa Thần kinh giỏi:
+                <br>
+                Các giáo sư, bác sĩ uy tín đầu ngành chuyên khoa Thần kinh đã và đang công tác tại các bệnh viện
+                lớn như: Bệnh viện Bạch Mai, Bệnh viện Việt Đức, Bệnh viện 108, Bệnh viện Đại học Y Hà Nội, Bệnh
+                viện 103.
+                <br>
+                Là thành viên hoặc lãnh đạo các tổ chức chuyên môn như: Hội Thần kinh Việt Nam, Hội Phẫu thuật
+                Thần kinh...
+                Được nhà nước công nhận các danh hiệu Thầy thuốc nhân dân, thầy thuốc ưu tú, bác sĩ cao cấp.
+                Khám bệnh chuyên khoa Thần kinh
+                Bại Não
+                <br>
+                Đau đầu, chóng mặt, buồn nôn
+                Bệnh Pakison, bệnh tiền đình
+                Bị co cơ, căng dây thần kinh
+                Động kinh, có những cơn vãng ý thức
+                Bị tê bì nửa mặt, chèn dây thần kinh
+                Bồn chồn, lo lắng, hồi hộp, chân tay run
+                Có dấu hiệu tăng động
+                Co rút cổ, đau đầu với mặt, chân tay, vã mồ hôi
+                Chấn thương đầu, dây thần kinh
+                ...
+              </p>
+              <div class="show-more">(Show More)</div>
+            </div>
+          </div>
+        </div>
+        <div class="list-doctor">
+          <ul class="list_specialized">
+            <li class="item_specialized">
+              <div class="container">
+                <div class="info_doctor">
+                  <div class="item_thumb">
+                    <img src="http://cdn.bosa.co.kr/news/photo/202102/2144599_177641_2151.jpg" alt="">
+                  </div>
+                  <div class="txt_desp">
+                    <h4>Nguyen Minh Hieu</h4>
+                    <p>Nguyên là Trưởng khoa Thận - Nội tiết, Bệnh Viện Nhi Đồng 1
+                      Gần 30 năm kinh nghiệm khám và điều trị các bệnh về Nội tiết nhi, Thận nhi khoa</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="item_specialized">
+              <div class="container">
+                <div class="info_doctor">
+                  <div class="item_thumb">
+                    <img src="http://cdn.bosa.co.kr/news/photo/202102/2144599_177641_2151.jpg" alt="">
+                  </div>
+                  <div class="txt_desp">
+                    <h3>Nguyen Minh Hieu</h3>
+                    <p>Nguyên là Trưởng khoa Thận - Nội tiết, Bệnh Viện Nhi Đồng 1
+                      Gần 30 năm kinh nghiệm khám và điều trị các bệnh về Nội tiết nhi, Thận nhi khoa</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="item_specialized">
+              <div class="container">
+                <div class="info_doctor">
+                  <div class="item_thumb">
+                    <img src="http://cdn.bosa.co.kr/news/photo/202102/2144599_177641_2151.jpg" alt="">
+                  </div>
+                  <div class="txt_desp">
+                    <h3>Nguyen Minh Hieu</h3>
+                    <p>Nguyên là Trưởng khoa Thận - Nội tiết, Bệnh Viện Nhi Đồng 1
+                      Gần 30 năm kinh nghiệm khám và điều trị các bệnh về Nội tiết nhi, Thận nhi khoa</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="container-list">
+            <div class="ttl">
+              <h3>Một số chuyên khoa</h3>
+            </div>
+            <ul class="list">
+              <li class="item">
+                <a href="specialized_detail.html">
+                  <div class="info">
+                    <div class="thumb">
+                      <img src="https://cdn.bookingcare.vn/fr/w300/2019/12/16/175620-nhi-khoa.jpg" alt="">
+                    </div>
+                    <p>Nhi khoa</p>
+                  </div>
+                </a>
+              </li>
+              <li class="item">
+                <a href="specialized_detail.html">
+                  <div class="info">
+                    <div class="thumb">
+                      <img src="https://cdn.bookingcare.vn/fr/w300/2019/12/16/175620-nhi-khoa.jpg" alt="">
+                    </div>
+                    <p>Nhi khoa</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div id="wrapper" class="specialized_detail">
-        <div class="inner">
-            <div class="info_specialized">
-                <div class="ttl">
-                    <h2>Nhi khoa</h2>
-                </div>
-                <div class="txt_desp">
-                  <p class="text show-more-height">
-                      Bác sĩ Thần kinh giỏi
-                      Danh sách các giáo sư, bác sĩ chuyên khoa Thần kinh giỏi:
-                      <br>
-                      Các giáo sư, bác sĩ uy tín đầu ngành chuyên khoa Thần kinh đã và đang công tác tại các bệnh viện
-                      lớn như: Bệnh viện Bạch Mai, Bệnh viện Việt Đức, Bệnh viện 108, Bệnh viện Đại học Y Hà Nội, Bệnh
-                      viện 103.
-                      <br>
-                      Là thành viên hoặc lãnh đạo các tổ chức chuyên môn như: Hội Thần kinh Việt Nam, Hội Phẫu thuật
-                      Thần kinh...
-                      Được nhà nước công nhận các danh hiệu Thầy thuốc nhân dân, thầy thuốc ưu tú, bác sĩ cao cấp.
-                      Khám bệnh chuyên khoa Thần kinh
-                      Bại Não
-                      <br>
-                      Đau đầu, chóng mặt, buồn nôn
-                      Bệnh Pakison, bệnh tiền đình
-                      Bị co cơ, căng dây thần kinh
-                      Động kinh, có những cơn vãng ý thức
-                      Bị tê bì nửa mặt, chèn dây thần kinh
-                      Bồn chồn, lo lắng, hồi hộp, chân tay run
-                      Có dấu hiệu tăng động
-                      Co rút cổ, đau đầu với mặt, chân tay, vã mồ hôi
-                      Chấn thương đầu, dây thần kinh
-                      ...
-                  </p>
-                  <div class="show-more">(Show More)</div>
-              </div>
-            </div>
-            <div class="list-doctor">
-                <ul class="list_specialized">
-                    <li class="item_specialized">
-                        <div class="container">
-                            <div class="info_doctor">
-                                <div class="item_thumb">
-                                    <img src="http://cdn.bosa.co.kr/news/photo/202102/2144599_177641_2151.jpg" alt="">
-                                </div>
-                                <div class="txt_desp">
-                                    <h4>Nguyen Minh Hieu</h4>
-                                    <p>Nguyên là Trưởng khoa Thận - Nội tiết, Bệnh Viện Nhi Đồng 1
-                                        Gần 30 năm kinh nghiệm khám và điều trị các bệnh về Nội tiết nhi, Thận nhi khoa</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item_specialized">
-                        <div class="container">
-                            <div class="info_doctor">
-                                <div class="item_thumb">
-                                    <img src="http://cdn.bosa.co.kr/news/photo/202102/2144599_177641_2151.jpg" alt="">
-                                </div>
-                                <div class="txt_desp">
-                                    <h3>Nguyen Minh Hieu</h3>
-                                    <p>Nguyên là Trưởng khoa Thận - Nội tiết, Bệnh Viện Nhi Đồng 1
-                                        Gần 30 năm kinh nghiệm khám và điều trị các bệnh về Nội tiết nhi, Thận nhi khoa</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item_specialized">
-                        <div class="container">
-                            <div class="info_doctor">
-                                <div class="item_thumb">
-                                    <img src="http://cdn.bosa.co.kr/news/photo/202102/2144599_177641_2151.jpg" alt="">
-                                </div>
-                                <div class="txt_desp">
-                                    <h3>Nguyen Minh Hieu</h3>
-                                    <p>Nguyên là Trưởng khoa Thận - Nội tiết, Bệnh Viện Nhi Đồng 1
-                                        Gần 30 năm kinh nghiệm khám và điều trị các bệnh về Nội tiết nhi, Thận nhi khoa</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <div class="container-list">
-                    <div class="ttl">
-                        <h3>Một số chuyên khoa</h3>
-                    </div>
-                    <ul class="list">
-                        <li class="item">
-                            <a href="specialized_detail.html">
-                                <div class="info">
-                                    <div class="thumb">
-                                        <img src="https://cdn.bookingcare.vn/fr/w300/2019/12/16/175620-nhi-khoa.jpg" alt="">
-                                    </div>
-                                    <p>Nhi khoa</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="specialized_detail.html">
-                                <div class="info">
-                                    <div class="thumb">
-                                        <img src="https://cdn.bookingcare.vn/fr/w300/2019/12/16/175620-nhi-khoa.jpg" alt="">
-                                    </div>
-                                    <p>Nhi khoa</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
-      <!-- Footer -->
-      <footer id="footer">
-        <div class="container">
-          <div class="inner">
-            <div class="address">
-              <div class="logo">
-                <img src="assets/images/logo.png" alt="">
-              </div>
-              <div class="item_content">
-                <ul>
-                  <li>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>372/15/13H Cách Mạng Tháng Tám, P. 10, Q. 3, Tp. HCM</p>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-map-location-dot"></i>
-                    <p>523 Tô Hiến Thành, P. 14, Q. 10, Tp. HCM</p>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>cskh@youmed.vn</p>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-paste"></i>
-                    <p>Mã số thuế: 0315268642</p>
-                  </li>
-                </ul>
-              </div>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="inner">
+          <div class="address">
+            <div class="logo">
+              <img src="assets/images/logo.png" alt="">
             </div>
-            <div class="about_us">
-              <div class="title">
-                <h3>Về EDoctor</h3>
-              </div>
+            <div class="item_content">
               <ul>
-                <li><a href="">Giới thiệu</a></li>
-                <li><a href="">Tuyển dụng</a></li>
-                <li><a href="">Liên hệ</a></li>
-                <li><a href="">Điều khoản</a></li>
-                <li><a href="">Chính sách bảo mật</a></li>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>372/15/13H Cách Mạng Tháng Tám, P. 10, Q. 3, Tp. HCM</p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-map-location-dot"></i>
+                  <p>523 Tô Hiến Thành, P. 14, Q. 10, Tp. HCM</p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>cskh@youmed.vn</p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-paste"></i>
+                  <p>Mã số thuế: 0315268642</p>
+                </li>
               </ul>
             </div>
-            <div class="contact">
-              <div class="hotline">
-                <div class="title">
-                  <h3>Tổng đài</h3>
-                </div>
-                <div class="item_thumb">
-                  <i class="fa-solid fa-phone"></i>
-                  <p> 1900-2805 </p>
-                </div>
-                <div class="txt_desp">
-                  <p>(Thứ 2 đến Thứ 7 - Từ 8h30 đến 20h30)</p>
-                </div>
-              </div>
-            </div>
           </div>
-          <div class="copyright">
-            <div class="inner">
-              <div class="txt_desp">
-                <p>© 2022 EDoctor. All Rights Reserved.</p>
+          <div class="about_us">
+            <div class="title">
+              <h3>Về EDoctor</h3>
+            </div>
+            <ul>
+              <li><a href="">Giới thiệu</a></li>
+              <li><a href="">Tuyển dụng</a></li>
+              <li><a href="">Liên hệ</a></li>
+              <li><a href="">Điều khoản</a></li>
+              <li><a href="">Chính sách bảo mật</a></li>
+            </ul>
+          </div>
+          <div class="contact">
+            <div class="hotline">
+              <div class="title">
+                <h3>Tổng đài</h3>
               </div>
               <div class="item_thumb">
-                <ul>
-                  <li>
-                    <img src="https://youmed.vn/assets/images/bo-cong-thuong.svg" alt="">
-                  </li>
-                  <li>
-                    <img
-                      src="https://images.dmca.com/Badges/dmca-badge-w200-2x1-02.png?ID=a74b3497-ddcd-4860-89c3-fce83c39f12a"
-                      alt="">
-                  </li>
-                </ul>
+                <i class="fa-solid fa-phone"></i>
+                <p> 1900-2805 </p>
+              </div>
+              <div class="txt_desp">
+                <p>(Thứ 2 đến Thứ 7 - Từ 8h30 đến 20h30)</p>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-      <!-- Footer -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-      <script>
-        $(document).ready(function () {
-          $(".image-slider").slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            infinite: true,
-            arrows: false,
-            draggable: false,
-            dots: false,
-            autoplay: true,
-            responsive: [
-              {
-                breakpoint: 1025,
-                settings: {
-                  slidesToShow: 3,
-                },
+        <div class="copyright">
+          <div class="inner">
+            <div class="txt_desp">
+              <p>© 2022 EDoctor. All Rights Reserved.</p>
+            </div>
+            <div class="item_thumb">
+              <ul>
+                <li>
+                  <img src="https://youmed.vn/assets/images/bo-cong-thuong.svg" alt="">
+                </li>
+                <li>
+                  <img
+                    src="https://images.dmca.com/Badges/dmca-badge-w200-2x1-02.png?ID=a74b3497-ddcd-4860-89c3-fce83c39f12a"
+                    alt="">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".image-slider").slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows: false,
+          draggable: false,
+          dots: false,
+          autoplay: true,
+          responsive: [
+            {
+              breakpoint: 1025,
+              settings: {
+                slidesToShow: 3,
               },
-              {
-                breakpoint: 480,
-                settings: {
-                  slidesToShow: 1,
-                  arrows: false,
-                  infinite: false,
-                },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                arrows: false,
+                infinite: false,
               },
-            ],
-            // autoplay: true,
-            // autoplaySpeed: 1000,
-          });
+            },
+          ],
+          // autoplay: true,
+          // autoplaySpeed: 1000,
         });
-      </script>
-      <script type="text/javascript">
-        $(".show-more").click(function () {
+      });
+    </script>
+    <script type="text/javascript">
+      $(".show-more").click(function () {
         if ($(".text").hasClass("show-more-height")) {
-            $(this).text("(Show Less)");
+          $(this).text("(Show Less)");
         } else {
-            $(this).text("(Show More)");
+          $(this).text("(Show More)");
         }
 
         $(".text").toggleClass("show-more-height");
-    });
-       </script>
-  </body>
-  
-  </html>
+      });
+    </script>
+</body>
+
+</html>
