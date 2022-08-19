@@ -497,15 +497,11 @@ button {
   }
 }
 
-@media (max-width: 768px) {
-  .tab-content .tab-pane form .modal-body {
-    text-align: left;
-  }
+.tab-content .tab-pane form .modal-body {
+  text-align: left;
 }
-@media (max-width: 768px) {
-  .tab-content .tab-pane form .modal-body .mb-3 .form-check-input {
-    margin: 0;
-  }
+.tab-content .tab-pane form .modal-body .mb-3 .form-check-input {
+  margin: 0;
 }
 
 .nav-tabs .nav-item .nav-link {
@@ -1516,18 +1512,6 @@ footer#footer .container .copyright .inner .item_thumb ul li img {
       -ms-flex-pack: end;
           justify-content: end;
 }
-.bill > .inner .navbar .search {
-  padding: 5px;
-}
-.bill > .inner .navbar .add {
-  padding: 5px;
-}
-.bill > .inner .navbar .add .modal-title {
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #297bc3;
-  font-weight: 500;
-}
 .bill > .inner .search-bill {
   margin-bottom: 30px;
 }
@@ -1575,45 +1559,193 @@ footer#footer .container .copyright .inner .item_thumb ul li img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 50px 10px 0;
+  text-align: left;
 }
 .bill > .inner .search-bill .container form .form .name input, .bill > .inner .search-bill .container form .form .status input, .bill > .inner .search-bill .container form .form .number input, .bill > .inner .search-bill .container form .form .date input {
   width: 340px;
   height: 40px;
+  outline-color: #5396ec;
+  border-radius: 5px;
+}
+.bill > .inner .search-bill .container form .btn-search {
+  background: #0d6efd;
+  border: none;
+  padding: 5px 15px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .bill > .inner .list-bill .ttl {
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 10px;
   color: #1b699d;
+  text-align: left;
 }
-.bill > .inner .list-bill .list-item .table-bordered {
+.bill > .inner .list-bill .list-item .table {
   text-align: center;
   font-size: 14px;
+  width: 100%;
 }
-.bill > .inner .list-bill .list-item .table-bordered th {
-  color: #fff;
+.bill > .inner .list-bill .list-item .table th {
+  line-height: 35px;
+  font-size: 16px;
+  background-color: #7ba3d5;
+  font-weight: 600;
 }
-.bill > .inner .list-bill .list-item .table-bordered tr,
-.bill > .inner .list-bill .list-item .table-bordered th,
-.bill > .inner .list-bill .list-item .table-bordered td {
+.bill > .inner .list-bill .list-item .table tr,
+.bill > .inner .list-bill .list-item .table th,
+.bill > .inner .list-bill .list-item .table td {
   border: 1px solid #dddd;
 }
-.bill > .inner .list-bill .list-item .table-bordered thead {
+.bill > .inner .list-bill .list-item .table thead {
   background-color: #3e8bbf;
 }
-.bill > .inner .list-bill .list-item .table-bordered td .modal-title {
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #297bc3;
-  font-weight: 500;
+.bill > .inner .list-bill .list-item .table td.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.bill > .inner .list-bill .list-item .table-bordered td button.detail, .bill > .inner .list-bill .list-item .table-bordered td button.edit, .bill > .inner .list-bill .list-item .table-bordered td button.check, .bill > .inner .list-bill .list-item .table-bordered td button.delete {
+.bill > .inner .list-bill .list-item .table td.btn-container .detail, .bill > .inner .list-bill .list-item .table td.btn-container .edit, .bill > .inner .list-bill .list-item .table td.btn-container .check, .bill > .inner .list-bill .list-item .table td.btn-container .delete {
   border: none;
   background: none;
   outline: none;
 }
-.bill > .inner .list-bill .list-item .table-bordered td .modal-body form {
+
+.ttl h3 {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #1977c9;
+  margin-bottom: 40px;
+}
+
+.form-container {
+  margin-bottom: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: left;
+}
+.form-container .form-label {
+  font-size: 18px;
+  line-height: 30px;
+}
+.form-container .form-label span {
+  color: red;
+}
+.form-container .form-control {
+  height: 40px;
+  width: 400px;
+  border: 1px solid #6c757d;
+  border-radius: 5px;
+  outline-color: #5396ec;
+}
+
+.btn-submit {
+  font-size: 18px;
+  background-color: #0d6efd;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+}
+
+.btn-add {
+  background: #0d6efd;
+  border: none;
+  padding: 5px 15px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-add span {
+  margin-left: 10px;
+}
+
+.popup_body {
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.popup_body_show {
+  display: block;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.popup_back {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.popup_contain {
+  position: relative;
+  background: #fff;
+  min-width: 300px;
+  max-width: 35%;
+  margin: 100px auto 50px;
+  min-height: 150px;
+  padding: 30px 80px;
+}
+
+.popup_close {
+  background: #c6c4c4;
+  padding: 5px 10px 5px;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.ttl h3 {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #1977c9;
+  margin-bottom: 40px;
+}
+
+input {
+  border: 1px solid;
 }
 
 .bill-detail > .inner {

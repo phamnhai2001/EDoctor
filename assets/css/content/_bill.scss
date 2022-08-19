@@ -8,21 +8,6 @@
         .navbar {
             display: flex;
             justify-content: end;
-
-            .search {
-                padding: 5px;
-            }
-
-            .add {
-                padding: 5px;
-
-                .modal-title {
-                    font-size: 18px;
-                    text-transform: uppercase;
-                    color: #297bc3;
-                    font-weight: 500;
-                }
-            }
         }
 
         .search-bill {
@@ -53,13 +38,27 @@
                             display: flex;
                             flex-direction: column;
                             margin: 0 50px 10px 0;
+                            text-align: left;
                             label {}
     
                             input {
                                 width: 340px;
                                 height: 40px;
+                                outline-color: #5396ec;
+                                border-radius: 5px;
                             }
                         }
+                    }
+                    .btn-search {
+                        background: #0d6efd;
+                        border: none;
+                        padding: 5px 15px;
+                        color: #fff;
+                        display: flex;
+                        line-height: 30px;
+                        font-size: 18px;
+                        border-radius: 5px;
+                        align-items: center;
                     }
                 }
             }
@@ -71,15 +70,19 @@
                 text-transform: uppercase;
                 margin-bottom: 10px;
                 color: #1b699d;
+                text-align: left;
             }
 
             .list-item {
-                .table-bordered {
+                .table {
                     text-align: center;
                     font-size: 14px;
-
+                    width: 100%;
                     th {
-                        color: #fff;
+                        line-height: 35px;
+                        font-size: 16px;
+                        background-color: #7ba3d5;
+                        font-weight: 600;
                     }
 
                     tr,
@@ -91,25 +94,14 @@
                     thead {
                         background-color: #3e8bbf;
                     }
-
                     td {
-                        .modal-title {
-                            font-size: 18px;
-                            text-transform: uppercase;
-                            color: #297bc3;
-                            font-weight: 500;
-                        }
-                        button {
-                            &.detail, &.edit, &.check, &.delete {
+                        &.btn-container {
+                            display: flex;
+                            justify-content: center;
+                            .detail,.edit,.check,.delete {
                                 border: none;
                                 background: none;
                                 outline: none;
-                                
-                            }
-                        }
-                        .modal-body {
-                            form {
-                                text-align: left;
                             }
                         }
                     }
@@ -118,3 +110,127 @@
         }
     }
 }
+.ttl {
+    h3 {
+        font-size: 22px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 30px;
+        color: #1977c9;
+        margin-bottom: 40px;
+    }
+}
+.form-container {
+    margin-bottom: 30px;
+    flex-direction: column;
+    display: flex;
+    text-align: left;
+    .form-label {
+        font-size: 18px;
+        line-height: 30px;
+        span {
+            color: red;
+        }
+    }
+    .form-control {
+        height: 40px;
+        width: 400px;
+        border: 1px solid #6c757d;
+        border-radius: 5px;
+        outline-color: #5396ec;
+    }
+}
+.btn-submit {
+    font-size: 18px;
+    background-color: #0d6efd;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+.btn-add {
+    background: #0d6efd;
+    border: none;
+    padding: 5px 15px;
+    color: #fff;
+    display: flex;
+    line-height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.btn-add span {
+    margin-left: 10px;
+}
+
+.popup_body {
+    display: none;
+    position: fixed;
+    overflow: hidden;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    -ms-transition: 300ms;
+    transition: 300ms;
+}
+
+.popup_body_show {
+    display: block;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    -ms-transition: 300ms;
+    transition: 300ms;
+}
+
+.popup_back {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.popup_contain {
+    position: relative;
+    background: #fff;
+    min-width: 300px;
+    max-width: 35%;
+    margin: 100px auto 50px;
+    min-height: 150px;
+    padding: 30px 80px;
+}
+
+.popup_close {
+    background: #c6c4c4;
+    padding: 5px 10px 5px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50%;
+}
+
+
+.ttl h3 {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 30px;
+    color: #1977c9;
+    margin-bottom: 40px;
+}
+
+input {
+    border: 1px solid;
+}
+
+
