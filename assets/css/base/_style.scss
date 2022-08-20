@@ -363,7 +363,6 @@
     justify-content: space-between;
     max-width: 700px;
     margin-bottom: 15px;
-    align-items: center;
     @include sp {
       max-width: get_sp(700);
       margin-bottom: get_sp(15);
@@ -373,8 +372,10 @@
   .section-v2 .ttl h3 {
     font-size: 30px;
     font-weight: 500;
+    margin-bottom: 20px;
     @include sp {
       font-size: get_sp(20);
+      margin-bottom: get_sp(20);
     }
   }
 
@@ -736,6 +737,7 @@
     &:hover {
       .dropdown {
           display: block;
+          z-index: 99;
       }
   }
   }

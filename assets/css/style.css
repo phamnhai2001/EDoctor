@@ -559,9 +559,6 @@ button {
           justify-content: space-between;
   max-width: 700px;
   margin-bottom: 15px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 @media (max-width: 768px) {
   .section-v2 .ttl {
@@ -573,10 +570,12 @@ button {
 .section-v2 .ttl h3 {
   font-size: 30px;
   font-weight: 500;
+  margin-bottom: 20px;
 }
 @media (max-width: 768px) {
   .section-v2 .ttl h3 {
     font-size: 2.6041666667vw;
+    margin-bottom: 2.6041666667vw;
   }
 }
 
@@ -1016,6 +1015,7 @@ button {
 }
 .navbar-nav .nav-item:hover .dropdown {
   display: block;
+  z-index: 99;
 }
 
 footer#footer .container {
@@ -1052,11 +1052,11 @@ footer#footer .container > .inner {
 }
 footer#footer .container > .inner .address {
   margin-bottom: 30px;
-  border-bottom: 1px solid;
 }
 @media (max-width: 768px) {
   footer#footer .container > .inner .address {
     margin-bottom: 3.90625vw;
+    border-bottom: 1px solid;
   }
 }
 footer#footer .container > .inner .address .logo {
@@ -1113,11 +1113,11 @@ footer#footer .container > .inner .address .item_content ul li p {
 }
 footer#footer .container > .inner .about_us {
   margin-bottom: 30px;
-  border-bottom: 1px solid;
 }
 @media (max-width: 768px) {
   footer#footer .container > .inner .about_us {
     margin-bottom: 3.90625vw;
+    border-bottom: 1px solid;
   }
 }
 footer#footer .container > .inner .about_us .title {
@@ -1760,6 +1760,9 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .bill-detail > .inner .information .logo {
   width: 160px;
@@ -1772,9 +1775,11 @@ input {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
+  line-height: 25px;
 }
 .bill-detail > .inner .information .info-detail p {
   font-size: 14px;
+  line-height: 20px;
 }
 .bill-detail > .inner .container {
   margin-bottom: 60px;
@@ -1786,7 +1791,9 @@ input {
   font-size: 35px;
   text-transform: uppercase;
   text-align: center;
+  line-height: 45px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 .bill-detail > .inner .container .ttl-bill p {
   text-align: center;
@@ -1802,10 +1809,11 @@ input {
 }
 .bill-detail > .inner .container .info-customer {
   margin-bottom: 30px;
+  text-align: left;
 }
 .bill-detail > .inner .container .info-customer p {
   font-size: 16px;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
 }
 .bill-detail > .inner .container .info-customer p span {
   font-weight: 600;
@@ -1880,10 +1888,20 @@ input {
   height: 110px;
   margin-right: 15px;
 }
-#wrapper.specialized > .inner .list_item .item_content a p {
-  color: #000;
-  font-size: 20px;
+#wrapper.specialized > .inner .list_item .item_content a .content {
+  text-align: left;
+}
+#wrapper.specialized > .inner .list_item .item_content a .content p {
+  font-size: 18px;
   line-height: 30px;
+  color: #000;
+}
+#wrapper.specialized > .inner .list_item .item_content a .content p.name {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+#wrapper.specialized > .inner .list_item .item_content a .content p span.price {
+  margin-right: 0;
 }
 #wrapper.specialized > .inner .list_item .item_content:first-child {
   border-top: 1px solid #dddddd;
@@ -2205,4 +2223,256 @@ input {
 }
 #wrapper.specialized_detail > .inner .list-doctor .container-list .list .item:last-child {
   border-bottom: none;
+}
+
+#edit_password .container {
+  padding-top: 10%;
+  padding-bottom: 100px;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0)), to(#afeaf5));
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #afeaf5);
+}
+#edit_password .container .row {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+#edit_password .container .row .card-title {
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 45px;
+  font-weight: 600;
+}
+#edit_password .container .row form {
+  text-align: left;
+}
+#edit_password .container .row form .alert-success {
+  margin-bottom: 25px;
+}
+#edit_password .container .row form .alert-success h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #7ed2d2;
+  font-style: italic;
+}
+#edit_password .container .row form .alert-danger {
+  margin-bottom: 25px;
+}
+#edit_password .container .row form .alert-danger h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ef5a69;
+  font-style: italic;
+}
+#edit_password .container .row form fieldset {
+  margin-bottom: 25px;
+}
+#edit_password .container .row form fieldset .form-group {
+  text-align: left;
+}
+#edit_password .container .row form fieldset .form-group .control-label {
+  margin-bottom: 5px;
+  display: block;
+}
+#edit_password .container .row form fieldset .form-group .col-sm-10 .form-control {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #dddddd;
+}
+#edit_password .container .row form fieldset .col-sm-10 {
+  text-align: center;
+}
+#edit_password .container .row form fieldset .col-sm-10 .btn {
+  background: #5396ec;
+  border: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #ffff;
+  cursor: pointer;
+}
+
+#edit_account .container {
+  padding-top: 10%;
+  padding-bottom: 100px;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0)), to(#afeaf5));
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #afeaf5);
+}
+#edit_account .container .row {
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+}
+#edit_account .container .row .card-title {
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 45px;
+  font-weight: 600;
+}
+#edit_account .container .row .form-horizontal {
+  text-align: left;
+}
+#edit_account .container .row .form-horizontal .alert-success {
+  margin-bottom: 25px;
+}
+#edit_account .container .row .form-horizontal .alert-success div h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #7ed2d2;
+  font-style: italic;
+}
+#edit_account .container .row .form-horizontal .card-content .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+#edit_account .container .row .form-horizontal .card-content .inner .left_form fieldset {
+  margin-bottom: 25px;
+}
+#edit_account .container .row .form-horizontal .card-content .inner .left_form fieldset .form-group .control-label {
+  margin-bottom: 5px;
+  display: block;
+}
+#edit_account .container .row .form-horizontal .card-content .inner .left_form fieldset .form-group .col-sm-10 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#edit_account .container .row .form-horizontal .card-content .inner .left_form fieldset .form-group .col-sm-10 .form-control {
+  width: 290px;
+  height: 45px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #dddddd;
+}
+#edit_account .container .row .form-horizontal .card-content .inner .right_form fieldset {
+  margin-bottom: 25px;
+}
+#edit_account .container .row .form-horizontal .card-content .inner .right_form fieldset .form-group .control-label {
+  margin-bottom: 5px;
+  display: block;
+}
+#edit_account .container .row .form-horizontal .card-content .inner .right_form fieldset .form-group .col-sm-10 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#edit_account .container .row .form-horizontal .card-content .inner .right_form fieldset .form-group .col-sm-10 .form-control {
+  width: 290px;
+  height: 45px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #dddddd;
+}
+#edit_account .container .row .form-horizontal .card-content .inner .right_form fieldset .form-group .col-sm-10 label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  margin-right: 20px;
+}
+#edit_account .container .row .form-horizontal .card-content .inner .right_form fieldset .form-group .col-sm-10 label input[type=radio] {
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  position: absolute;
+  left: -9999px;
+}
+#edit_account .container .row .form-horizontal .card-content .inner .right_form fieldset .form-group .col-sm-10 label input[type=radio]:checked ~ span {
+  background-color: #d6d6e5;
+}
+#edit_account .container .row .form-horizontal .card-content .inner .right_form fieldset .form-group .col-sm-10 label input[type=radio]:checked ~ span:before {
+  -webkit-box-shadow: inset 0 0 0 0.4375em #00005c;
+          box-shadow: inset 0 0 0 0.4375em #00005c;
+}
+#edit_account .container .row .form-horizontal .card-content .inner .right_form fieldset .form-group .col-sm-10 label span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.375em 0.75em 0.375em 0.375em;
+  border-radius: 99em;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+#edit_account .container .row .form-horizontal .card-content .inner .right_form fieldset .form-group .col-sm-10 label span:hover {
+  background-color: #d6d6e5;
+}
+#edit_account .container .row .form-horizontal .card-content .inner .right_form fieldset .form-group .col-sm-10 label span:before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  content: "";
+  background-color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  margin-right: 0.375em;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+  -webkit-box-shadow: inset 0 0 0 0.125em #00005c;
+          box-shadow: inset 0 0 0 0.125em #00005c;
+}
+#edit_account .container .row .form-horizontal .card-content .col-sm-10 {
+  text-align: center;
+}
+#edit_account .container .row .form-horizontal .card-content .col-sm-10 .btn {
+  background: #5396ec;
+  border: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #ffff;
+  cursor: pointer;
+}
+
+#wrapper.forget-password > .inner {
+  max-width: 850px;
+  width: 88.88%;
+  margin: 0 auto 80px;
+  padding: 10% 30px 0;
+}
+#wrapper.forget-password > .inner .form-submit .ttl {
+  margin-bottom: 25px;
+}
+#wrapper.forget-password > .inner .form-submit .ttl p {
+  font-size: 18px;
+  line-height: 25px;
+}
+#wrapper.forget-password > .inner .form-submit form .form-control {
+  margin-bottom: 25px;
+}
+#wrapper.forget-password > .inner .form-submit form .form-control .form-input input {
+  width: 500px;
+  height: 50px;
+  padding: 5px 20px;
+  outline-color: #7ed2d2;
+  border-radius: 5px;
+}
+#wrapper.forget-password > .inner .form-submit form button {
+  background: #7ed2d2;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
 }

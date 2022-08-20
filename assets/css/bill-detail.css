@@ -1,0 +1,214 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: SVN Gilroy;
+  src: url(../../libs/css/fonts/SVN-Gilroy-Light.otf);
+}
+/* automatic size vw */
+/* automatic size vh */
+/* text clamp */
+/* anime In order */
+/*
+    common
+*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  font-family: "SVN Gilroy", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  word-wrap: break-word;
+  text-align: center;
+}
+html.hidden,
+body.hidden {
+  height: 100%;
+  overflow: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  -webkit-touch-callout: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+input, select, textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.util_sp {
+  display: none !important;
+}
+@media (max-width: 768px) {
+  .util_sp {
+    display: block !important;
+  }
+}
+
+.util_pc {
+  display: block !important;
+}
+@media (max-width: 768px) {
+  .util_pc {
+    display: none !important;
+  }
+}
+
+@media print {
+  img {
+    display: none;
+  }
+}
+button {
+  cursor: pointer;
+}
+
+.bill-detail > .inner {
+  max-width: 900px;
+  width: 100%;
+  margin: 70px auto;
+  padding: 3% 3% 10% 3%;
+  background: #f3f3f3;
+}
+.bill-detail > .inner .information {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bill-detail > .inner .information .logo {
+  width: 160px;
+  margin-right: 20px;
+}
+.bill-detail > .inner .information .info-detail {
+  text-align: left;
+}
+.bill-detail > .inner .information .info-detail h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+}
+.bill-detail > .inner .information .info-detail p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.bill-detail > .inner .container {
+  margin-bottom: 60px;
+}
+.bill-detail > .inner .container .ttl-bill {
+  margin-bottom: 5px;
+}
+.bill-detail > .inner .container .ttl-bill h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 45px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.bill-detail > .inner .container .ttl-bill p {
+  text-align: center;
+  font-size: 16px;
+}
+.bill-detail > .inner .container .number-bill {
+  margin-bottom: 20px;
+}
+.bill-detail > .inner .container .number-bill p {
+  font-size: 16px;
+  text-align: right;
+  font-weight: 600;
+}
+.bill-detail > .inner .container .info-customer {
+  margin-bottom: 30px;
+  text-align: left;
+}
+.bill-detail > .inner .container .info-customer p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.bill-detail > .inner .container .info-customer p span {
+  font-weight: 600;
+}
+.bill-detail > .inner .container .table-bordered {
+  font-size: 16px;
+  text-align: center;
+}
+.bill-detail > .inner .container .table-bordered thead {
+  background-color: #a5a8aa;
+  font-weight: 600;
+}
+.bill-detail > .inner .container .table-bordered tr, .bill-detail > .inner .container .table-bordered th, .bill-detail > .inner .container .table-bordered td {
+  border: 1px solid #dddd;
+}
+.bill-detail > .inner .container .total-cost p {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: right;
+}
+.bill-detail > .inner .footer-bill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.bill-detail > .inner .footer-bill .customer p, .bill-detail > .inner .footer-bill .cashier p {
+  font-size: 16px;
+}

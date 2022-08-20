@@ -21,9 +21,9 @@ footer {
                 }
                 .address {
                     margin-bottom: 30px;
-                    border-bottom: 1px solid;
                     @include sp {
                         margin-bottom: get_sp(30);
+                        border-bottom: 1px solid;
                     }
                     .logo {
                         margin-bottom: 30px;
@@ -71,9 +71,9 @@ footer {
                 }
                 .about_us {
                     margin-bottom: 30px;
-                    border-bottom: 1px solid;
                     @include sp {
                         margin-bottom: get_sp(30);
+                        border-bottom: 1px solid;
                     }
                     .title {
                         margin-bottom: 25px;

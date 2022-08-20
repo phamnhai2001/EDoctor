@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <style>
+        .card-content {
+            font-family: DejaVu Sans, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-content table-responsive table-full-width">
+        <table width="100%" class="table">
+            <thead>
+                <tr>
+                    <th>Ngày đặt</th>
+                    <th>Thời gian</th>
+                    <th>Tên khách hàng</th>
+                    <th>Sđt</th>
+                    <th>Tài khoản đặt</th>
+                    <th>Bác sĩ</th>
+                    <th>Chuyên khoa</th>
+                    <th>Giá khám</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                    <tr>
+                        <td>{{ $data->schedule_date }}</td>
+                        <td>{{ $data->start_time . '-' . $data->end_time }}</td>
+                        <td>{{ $data->customer_name }}</td>
+                        <td>{{ $data->customer_phone }}</td>
+                        <td>{{ $data->customer_name }}</td>
+                        <td>{{ $data->doctor_name }}</td>
+                        <td>{{ $data->specialist_name }}</td>
+                        <td>{{ number_format($data->price) }}đ</td>
+                        {{-- <td>{{ $data->status }}</td> --}}
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

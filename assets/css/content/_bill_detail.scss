@@ -8,6 +8,7 @@
         .information {
             margin-bottom: 30px;
             display: flex;
+            align-items: center;
             .logo {
                 width: 160px;
                 margin-right: 20px;
@@ -18,9 +19,11 @@
                     text-transform: uppercase;
                     font-size: 18px;
                     font-weight: 600;
+                    line-height: 25px;
                 }
                 p {
                     font-size: 14px;
+                    line-height: 20px;
                 }
             }
         }
@@ -32,7 +35,9 @@
                     font-size: 35px;
                     text-transform: uppercase;
                     text-align: center;
+                    line-height: 45px;
                     font-weight: 700;
+                    margin-bottom: 10px;
                 }
                 p {
                     text-align: center;
@@ -49,9 +54,10 @@
             }
             .info-customer {
                 margin-bottom: 30px;
+                text-align: left;
                 p {
                     font-size: 16px;
-                    margin-bottom: 3px;
+                    margin-bottom: 10px;
                     span {
                         font-weight: 600;
                     }
